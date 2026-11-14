@@ -2,10 +2,14 @@
 
 [ext_resource type="Texture2D" uid="uid://dcl23nk64ilfr" path="res://ball.png" id="1_dy6sc"]
 
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_5vw27"]
+bounce = 0.7
+
 [sub_resource type="CircleShape2D" id="CircleShape2D_450et"]
 radius = 46.95
 
 [node name="Ball" type="RigidBody2D" unique_id=895890468]
+physics_material_override = SubResource("PhysicsMaterial_5vw27")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1865369357]
 shape = SubResource("CircleShape2D_450et")
