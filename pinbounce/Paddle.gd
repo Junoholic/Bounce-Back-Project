@@ -3,7 +3,7 @@ extends AnimatableBody2D
 var cooldown
 var baseposition
 var rotationMult = 8
-var length = 10.2
+var length = 0.2
 var pivotDistance = 0
 var rot
 

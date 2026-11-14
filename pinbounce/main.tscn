@@ -172,9 +172,6 @@ tile_set = SubResource("TileSet_r4utc")
 
 [node name="Marker2D" type="Marker2D" parent="." unique_id=1469290145]
 
-[node name="Ball" parent="." unique_id=990906771 instance=ExtResource("2_0xm2m")]
-position = Vector2(569, 76)
-
 [node name="Paddle" parent="." unique_id=803579783 instance=ExtResource("3_h2yge")]
 position = Vector2(589, 515.70496)
 scale = Vector2(8.32, 8.32)
@@ -245,3 +242,6 @@ horizontal_alignment = 1
 
 [node name="Carrot" parent="." unique_id=2055753811 instance=ExtResource("8_5vw27")]
 position = Vector2(576, 350)
+
+[node name="Ball" parent="." unique_id=895890468 instance=ExtResource("2_0xm2m")]
+position = Vector2(593, 149)
