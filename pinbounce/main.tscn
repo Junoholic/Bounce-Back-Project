@@ -17,6 +17,7 @@ size = Vector2(1208, 248.79001)
 offset_left = 450.0
 offset_right = 719.0
 offset_bottom = 67.0
+horizontal_alignment = 1
 script = ExtResource("1_ig7tw")
 
 [node name="Timer" type="Timer" parent="TimeLabel" unique_id=1422917469]
@@ -34,3 +35,11 @@ position = Vector2(28, 88)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=830696482]
 position = Vector2(556, 633)
 shape = SubResource("RectangleShape2D_450et")
+
+[node name="LevelLabel" type="Label" parent="." unique_id=332814014]
+offset_left = 436.0
+offset_top = 116.0
+offset_right = 681.0
+offset_bottom = 236.0
+text = "Level One"
+horizontal_alignment = 1
