@@ -1,12 +1,12 @@
 [gd_scene format=3 uid="uid://d3gw3w3futfgo"]
 
 [ext_resource type="Script" uid="uid://bjnvif5qgvklf" path="res://carrot.gd" id="1_qg445"]
-[ext_resource type="Texture2D" uid="uid://dcl23nk64ilfr" path="res://ball.png" id="2_ffjwf"]
+[ext_resource type="Texture2D" uid="uid://b7cixl60ibsoq" path="res://carrot.png" id="2_qg445"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_450et"]
-radius = 5.0
+radius = 30.536863
 
-[node name="Area2D" type="Area2D" unique_id=2055753811]
+[node name="Carrot" type="Area2D" unique_id=2055753811]
 script = ExtResource("1_qg445")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=778304282]
@@ -14,7 +14,6 @@ scale = Vector2(2, 2)
 shape = SubResource("CircleShape2D_450et")
 
 [node name="Sprite2D" type="Sprite2D" parent="CollisionShape2D" unique_id=1722904543]
-scale = Vector2(0.01, 0.01)
-texture = ExtResource("2_ffjwf")
+texture = ExtResource("2_qg445")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
