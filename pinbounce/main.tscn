@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://u5bgu0qf2gpr" path="res://Ball.tscn" id="2_0xm2m"]
 [ext_resource type="Texture2D" uid="uid://b8uknvabdmtt4" path="res://tiles/border_tile.png" id="2_7mycd"]
 [ext_resource type="PackedScene" uid="uid://bnpdwr57njcd" path="res://paddle.tscn" id="3_h2yge"]
+[ext_resource type="PackedScene" uid="uid://dghw2wwq3h82d" path="res://wall.tscn" id="7_272bh"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_272bh"]
 texture = ExtResource("1_1bvp3")
@@ -533,13 +534,6 @@ sources/2 = SubResource("TileSetAtlasSource_5vw27")
 shadow_color = Color(0, 0, 0, 0.7882353)
 shadow_offset = Vector2(2, 2)
 
-[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_0xm2m"]
-bounce = 0.4
-absorbent = true
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_450et"]
-size = Vector2(1208, 248.79001)
-
 [sub_resource type="LabelSettings" id="LabelSettings_5vw27"]
 font = ExtResource("1_h2yge")
 shadow_color = Color(0, 0, 0, 0.7882353)
@@ -570,14 +564,6 @@ autostart = true
 
 [node name="Ball" parent="." unique_id=990906771 instance=ExtResource("2_0xm2m")]
 position = Vector2(569, 76)
-physics_material_override = SubResource("PhysicsMaterial_0xm2m")
-
-[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1546942463]
-position = Vector2(28, 88)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=830696482]
-position = Vector2(549, 566)
-shape = SubResource("RectangleShape2D_450et")
 
 [node name="LevelLabel" type="Label" parent="." unique_id=332814014]
 offset_left = 461.0
@@ -591,3 +577,19 @@ horizontal_alignment = 1
 
 [node name="Paddle" parent="." unique_id=803579783 instance=ExtResource("3_h2yge")]
 position = Vector2(589, 515.70496)
+
+[node name="Wall" parent="." unique_id=810970931 instance=ExtResource("7_272bh")]
+position = Vector2(576, 30)
+scale = Vector2(57.6, 3)
+
+[node name="Wall2" parent="." unique_id=909896859 instance=ExtResource("7_272bh")]
+position = Vector2(576, 626)
+scale = Vector2(57.6, 3)
+
+[node name="Wall3" parent="." unique_id=1673131253 instance=ExtResource("7_272bh")]
+position = Vector2(30, 328)
+scale = Vector2(3, 26.8)
+
+[node name="Wall4" parent="." unique_id=1770469922 instance=ExtResource("7_272bh")]
+position = Vector2(1122, 328)
+scale = Vector2(3, 26.8)
