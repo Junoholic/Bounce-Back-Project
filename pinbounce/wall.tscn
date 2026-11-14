@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://dghw2wwq3h82d"]
+
+[sub_resource type="TileSet" id="TileSet_oh6kn"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_450et"]
+
+[node name="Wall" type="StaticBody2D" unique_id=810970931]
+
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=262012446]
+tile_set = SubResource("TileSet_oh6kn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1816614415]
+shape = SubResource("RectangleShape2D_450et")
