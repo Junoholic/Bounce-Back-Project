@@ -1,3 +1,21 @@
 [gd_scene format=3 uid="uid://ck32twtjweevn"]
 
-[node name="Node2D" type="Node2D" unique_id=1509803467]
+[sub_resource type="SpriteFrames" id="SpriteFrames_y2cqg"]
+animations = [{
+"frames": [],
+"loop": 1,
+"name": &"up",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": 1,
+"name": &"walk",
+"speed": 5.0
+}]
+
+[node name="Player" type="Area2D" unique_id=1579365529]
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=752140512]
+sprite_frames = SubResource("SpriteFrames_y2cqg")
+animation = &"walk"
