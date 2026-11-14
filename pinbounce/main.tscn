@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://2ool7smor085"]
 
+[ext_resource type="FontFile" uid="uid://b5kkw0b81bcqr" path="res://Pixeled.ttf" id="1_h2yge"]
 [ext_resource type="Script" uid="uid://bogxr70wmuv4r" path="res://time_label.gd" id="1_ig7tw"]
 [ext_resource type="PackedScene" uid="uid://u5bgu0qf2gpr" path="res://Ball.tscn" id="2_0xm2m"]
 
@@ -14,9 +15,13 @@ size = Vector2(1208, 248.79001)
 [node name="Marker2D" type="Marker2D" parent="." unique_id=1469290145]
 
 [node name="TimeLabel" type="Label" parent="." unique_id=1343628223]
-offset_left = 450.0
-offset_right = 719.0
-offset_bottom = 67.0
+offset_left = 436.0
+offset_top = 1.0
+offset_right = 705.0
+offset_bottom = 68.0
+theme_override_fonts/font = ExtResource("1_h2yge")
+text = "Time
+"
 horizontal_alignment = 1
 script = ExtResource("1_ig7tw")
 
@@ -37,9 +42,14 @@ position = Vector2(556, 633)
 shape = SubResource("RectangleShape2D_450et")
 
 [node name="LevelLabel" type="Label" parent="." unique_id=332814014]
-offset_left = 436.0
-offset_top = 116.0
-offset_right = 681.0
-offset_bottom = 236.0
+offset_left = 452.0
+offset_top = 29.0
+offset_right = 697.0
+offset_bottom = 149.0
+theme_override_fonts/font = ExtResource("1_h2yge")
 text = "Level One"
 horizontal_alignment = 1
+
+[node name="TextureProgressBar" type="TextureProgressBar" parent="." unique_id=700257689]
+offset_right = 88.0
+offset_bottom = 448.0
