@@ -12,6 +12,7 @@
 [ext_resource type="Script" uid="uid://d3tq21q2d2aew" path="res://GameMaster.gd" id="9_kek77"]
 [ext_resource type="Texture2D" uid="uid://b7cixl60ibsoq" path="res://carrot.png" id="10_dg77c"]
 [ext_resource type="PackedScene" uid="uid://bxkf3tb773ucd" path="res://trampoline.tscn" id="12_dg77c"]
+[ext_resource type="Texture2D" uid="uid://d0jowxxc5qxcv" path="res://box_closed.png" id="13_ycdy4"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_272bh"]
 texture = ExtResource("1_1bvp3")
@@ -248,3 +249,14 @@ position = Vector2(348, 550)
 
 [node name="PaddleParent" parent="." unique_id=647843333 instance=ExtResource("3_h2yge")]
 position = Vector2(531, 560)
+
+[node name="Box" type="StaticBody2D" parent="." unique_id=1635138446]
+scale = Vector2(7.375, 7.375)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Box" unique_id=1481434515]
+polygon = PackedVector2Array(8.135, 80.82, 22.101694, 80.67796)
+
+[node name="Sprite2D" type="Sprite2D" parent="Box" unique_id=1506225181]
+position = Vector2(19.525423, 69.42373)
+scale = Vector2(0.16949154, 0.16949154)
+texture = ExtResource("13_ycdy4")
