@@ -10,12 +10,9 @@ load_path = "res://.godot/imported/trampoline.png-6d23656cb6208ca169846752748f83
 
 [node name="Trampoline" type="AnimatableBody2D" unique_id=607760481]
 script = ExtResource("1_d0j4r")
-speed = null
 
-[node name="Trampoline" type="AnimatableBody2D" parent="." unique_id=1605999557]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Trampoline" unique_id=1288479015]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1288479015]
 shape = SubResource("RectangleShape2D_y2cqg")
 
-[node name="Sprite2D" type="Sprite2D" parent="Trampoline/CollisionShape2D" unique_id=1213716037]
+[node name="Sprite2D" type="Sprite2D" parent="CollisionShape2D" unique_id=1213716037]
 texture = SubResource("CompressedTexture2D_woddn")
