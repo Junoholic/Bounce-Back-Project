@@ -7,10 +7,11 @@
 points = PackedVector2Array(16.393442, -3.2786884, -4.9180326, -4.9180326, -13.88, -5.57, -16.79, -0.03, -14.055, 7.31, 6.557377, 6.557377, 16.393442, 3.2786884)
 
 [node name="PaddleParent" type="AnimatableBody2D" unique_id=647843333]
+script = ExtResource("2_r112f")
 
 [node name="Paddle" type="AnimatableBody2D" parent="." unique_id=992710867]
+position = Vector2(5.3, 0)
 sync_to_physics = false
-script = ExtResource("2_r112f")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Paddle" unique_id=496678308]
 scale = Vector2(0.61, 0.61)

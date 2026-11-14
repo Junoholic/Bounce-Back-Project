@@ -3,14 +3,14 @@ extends AnimatableBody2D
 var cooldown
 var baseposition
 var rotationMult = 8
-var length = 0.2
-var pivotDistance = -50
+var length = 10.2
+var pivotDistance = 0
 var rot
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	cooldown = 0
-	baseposition = get_parent().position
+	baseposition = position
 	pass # Replace with function body.
 
 
@@ -31,7 +31,7 @@ func _process(delta: float) -> void:
 			rot = -rotationMult * cooldown
 			
 		rotation = rot
+		#get_parent().position = baseposition + Vector2(pivotDistance * (1 - cos(rot)), -pivotDistance * sin(rot))
 		cooldown -= delta
-		get_parent().position = baseposition + Vector2(pivotDistance * (1 - cos(rot)), -pivotDistance * sin(rot))
 		cooldown = max(cooldown, 0)
 	pass
