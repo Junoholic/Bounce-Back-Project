@@ -1,5 +1,7 @@
 [gd_scene format=3 uid="uid://ck32twtjweevn"]
 
+[ext_resource type="Texture2D" uid="uid://8xmfyuuyl5k5" path="res://paddle.png" id="1_wtcfe"]
+
 [sub_resource type="SpriteFrames" id="SpriteFrames_y2cqg"]
 animations = [{
 "frames": [],
@@ -7,15 +9,27 @@ animations = [{
 "name": &"up",
 "speed": 5.0
 }, {
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_wtcfe")
+}],
 "loop": 1,
 "name": &"walk",
 "speed": 5.0
 }]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_y2cqg"]
+size = Vector2(960, 382)
+
 [node name="Player" type="Area2D" unique_id=1579365529]
+position = Vector2(441, 447)
 metadata/_edit_group_ = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=752140512]
+scale = Vector2(0.5, 0.5)
 sprite_frames = SubResource("SpriteFrames_y2cqg")
 animation = &"walk"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatedSprite2D" unique_id=1549128870]
+position = Vector2(4, 1)
+shape = SubResource("RectangleShape2D_y2cqg")
