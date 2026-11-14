@@ -9,7 +9,7 @@ var velocity = Vector2.ZERO
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	screen_size = get_viewport_rect().size
-	ball_size = $ColliderShape2D.get_shape().get_size()
+	#ball_size = $ColliderShape2D.get_shape().get_size()
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -22,7 +22,7 @@ func _process(delta: float) -> void:
 		
 	velocity.y += 1
 	
-	if position.y + velocity.y * delta >= screen_size.y - ball_size or position.y + velocity.y * delta <= ball_size:
+	if position.y + velocity.y * delta >= screen_size.y or position.y + velocity.y * delta <= 0:
 		velocity.y *= -0.9
 	
 		
@@ -32,5 +32,5 @@ func _process(delta: float) -> void:
 		$AnimatedSprite2D.stop()
 	
 	position += velocity * delta
-	position = position.clamp(Vector2.ZERO, screen_size - ball_size)
+	position = position.clamp(Vector2.ZERO, screen_size)
 	pass

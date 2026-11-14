@@ -1,6 +1,10 @@
 [gd_scene format=3 uid="uid://2ool7smor085"]
 
 [ext_resource type="Script" uid="uid://bogxr70wmuv4r" path="res://time_label.gd" id="1_ig7tw"]
+[ext_resource type="PackedScene" uid="uid://u5bgu0qf2gpr" path="res://mob.tscn" id="2_0xm2m"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_450et"]
+size = Vector2(1208, 248.79001)
 
 [node name="Main" type="Node" unique_id=397367065]
 
@@ -15,3 +19,13 @@ script = ExtResource("1_ig7tw")
 wait_time = 60.0
 one_shot = true
 autostart = true
+
+[node name="Ball" parent="." unique_id=990906771 instance=ExtResource("2_0xm2m")]
+position = Vector2(595, 45)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1546942463]
+position = Vector2(28, 88)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=830696482]
+position = Vector2(565, 493)
+shape = SubResource("RectangleShape2D_450et")
