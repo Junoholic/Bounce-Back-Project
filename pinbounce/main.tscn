@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://bogxr70wmuv4r" path="res://time_label.gd" id="1_ig7tw"]
 [ext_resource type="PackedScene" uid="uid://u5bgu0qf2gpr" path="res://Ball.tscn" id="2_0xm2m"]
+[ext_resource type="Script" uid="uid://cu7gv2lhm1qhs" path="res://player.gd" id="3_h2yge"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_0xm2m"]
 bounce = 0.9
@@ -27,6 +28,7 @@ autostart = true
 [node name="Ball" parent="." unique_id=990906771 instance=ExtResource("2_0xm2m")]
 position = Vector2(569, 76)
 physics_material_override = SubResource("PhysicsMaterial_0xm2m")
+script = ExtResource("3_h2yge")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1546942463]
 position = Vector2(28, 88)

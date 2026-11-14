@@ -12,13 +12,20 @@ func _ready() -> void:
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	velocity.x = 0
+#func _process(delta: float) -> void:
+	#velocity.x = 0
+	#if Input.is_action_pressed("move_right"):
+		#velocity.x += speed
+	#if Input.is_action_pressed("move_left"):
+		#velocity.x -= speed	
+		
+func _integrate_forces(state):
 	if Input.is_action_pressed("move_right"):
 		velocity.x += speed
 	if Input.is_action_pressed("move_left"):
 		velocity.x -= speed	
+	state.transform = tr
 	
-	position.x += velocity.x * delta
-	position.x = position.clamp(Vector2.ZERO, screen_size).x
+	#position.x += velocity.x * delta
+	#position.x = position.clamp(Vector2.ZERO, screen_size).x
 	pass
