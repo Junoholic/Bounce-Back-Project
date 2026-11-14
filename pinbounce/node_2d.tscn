@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://ck32twtjweevn"]
 
+[ext_resource type="Script" uid="uid://cu7gv2lhm1qhs" path="res://player.gd" id="1_0e48y"]
 [ext_resource type="Texture2D" uid="uid://8xmfyuuyl5k5" path="res://paddle.png" id="1_wtcfe"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_y2cqg"]
@@ -23,6 +24,7 @@ size = Vector2(960, 382)
 
 [node name="Player" type="Area2D" unique_id=1579365529]
 position = Vector2(441, 447)
+script = ExtResource("1_0e48y")
 metadata/_edit_group_ = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=752140512]
