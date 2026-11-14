@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://bnpdwr57njcd"]
+
+[ext_resource type="Script" uid="uid://bx5a5lndofnr7" path="res://Paddle.gd" id="2_r112f"]
+[ext_resource type="Texture2D" uid="uid://8xmfyuuyl5k5" path="res://paddle.png" id="2_tbytw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_450et"]
+size = Vector2(231, 51)
+
+[node name="PaddleParent" type="AnimatableBody2D" unique_id=647843333]
+
+[node name="Paddle" type="AnimatableBody2D" parent="." unique_id=992710867]
+sync_to_physics = false
+script = ExtResource("2_r112f")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Paddle" unique_id=496678308]
+scale = Vector2(0.61, 0.61)
+shape = SubResource("RectangleShape2D_450et")
+
+[node name="Sprite2D" type="Sprite2D" parent="Paddle/CollisionShape2D" unique_id=1582189228]
+scale = Vector2(0.2704918, 0.2704918)
+texture = ExtResource("2_tbytw")

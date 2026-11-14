@@ -2,9 +2,11 @@
 
 [ext_resource type="Script" uid="uid://bogxr70wmuv4r" path="res://time_label.gd" id="1_ig7tw"]
 [ext_resource type="PackedScene" uid="uid://u5bgu0qf2gpr" path="res://Ball.tscn" id="2_0xm2m"]
+[ext_resource type="PackedScene" uid="uid://bnpdwr57njcd" path="res://paddle.tscn" id="3_h2yge"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_0xm2m"]
-bounce = 0.9
+bounce = 0.4
+absorbent = true
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_450et"]
 size = Vector2(1208, 248.79001)
@@ -33,7 +35,7 @@ physics_material_override = SubResource("PhysicsMaterial_0xm2m")
 position = Vector2(28, 88)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=830696482]
-position = Vector2(556, 633)
+position = Vector2(549, 566)
 shape = SubResource("RectangleShape2D_450et")
 
 [node name="LevelLabel" type="Label" parent="." unique_id=332814014]
@@ -43,3 +45,6 @@ offset_right = 681.0
 offset_bottom = 236.0
 text = "Level One"
 horizontal_alignment = 1
+
+[node name="Paddle" parent="." unique_id=803579783 instance=ExtResource("3_h2yge")]
+position = Vector2(589, 515.70496)
