@@ -276,6 +276,7 @@ texture = ExtResource("14_w48qg")
 
 [node name="AnimatableBody2D" type="AnimatableBody2D" parent="Box" unique_id=1030120301]
 position = Vector2(18.440678, 77.55932)
+rotation = 0.20071286
 script = ExtResource("15_vivmo")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Box/AnimatableBody2D" unique_id=1510499309]
@@ -283,5 +284,6 @@ position = Vector2(-1.0847458, 1.6271186)
 shape = SubResource("RectangleShape2D_450et")
 
 [node name="Sprite2D" type="Sprite2D" parent="Box/AnimatableBody2D" unique_id=102498393]
-scale = Vector2(0.08, 0.08)
+position = Vector2(-0.9491525, 1.6271169)
+scale = Vector2(0.08, 0.00847459)
 texture = ExtResource("16_2cqfq")

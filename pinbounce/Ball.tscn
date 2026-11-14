@@ -3,6 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://dcl23nk64ilfr" path="res://ball.png" id="1_dy6sc"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_5vw27"]
+friction = 100.0
 bounce = 0.9
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_450et"]
