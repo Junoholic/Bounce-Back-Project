@@ -7,8 +7,9 @@
 [node name="Marker2D" type="Marker2D" parent="." unique_id=1469290145]
 
 [node name="TimeLabel" type="Label" parent="." unique_id=1343628223]
-offset_right = 40.0
-offset_bottom = 23.0
+offset_left = 450.0
+offset_right = 719.0
+offset_bottom = 67.0
 script = ExtResource("1_ig7tw")
 
 [node name="Timer" type="Timer" parent="TimeLabel" unique_id=1422917469]
