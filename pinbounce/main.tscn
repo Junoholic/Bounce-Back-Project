@@ -173,11 +173,6 @@ tile_set = SubResource("TileSet_r4utc")
 
 [node name="Marker2D" type="Marker2D" parent="." unique_id=1469290145]
 
-[node name="Paddle" parent="." unique_id=803579783 instance=ExtResource("3_h2yge")]
-position = Vector2(589, 515.70496)
-scale = Vector2(8.32, 8.32)
-script = null
-
 [node name="Wall" parent="." unique_id=810970931 instance=ExtResource("7_272bh")]
 position = Vector2(576, 30)
 scale = Vector2(57.6, 3)
@@ -250,3 +245,6 @@ position = Vector2(593, 149)
 
 [node name="Trampoline" parent="." unique_id=607760481 instance=ExtResource("12_dg77c")]
 position = Vector2(348, 550)
+
+[node name="PaddleParent" parent="." unique_id=647843333 instance=ExtResource("3_h2yge")]
+position = Vector2(531, 560)
