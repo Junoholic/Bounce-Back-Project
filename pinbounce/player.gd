@@ -2,6 +2,7 @@ extends Area2D
 
 @export var speed = 400 
 var screen_size 
+var velocity = Vector2.ZERO
 
 
 # Called when the node enters the scene tree for the first time.
@@ -11,14 +12,20 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	var velocity = Vector2.ZERO
+	velocity.x = 0
 	if Input.is_action_pressed("move_right"):
-		velocity.x += 1
+		velocity.x += speed
 	if Input.is_action_pressed("move_left"):
-		velocity.x -= 1
+		velocity.x -= speed
+		
+	velocity.y += 1
+	
+	print(position.y + velocity.y * delta)
+	if position.y + velocity.y * delta >= screen_size.y or position.y + velocity.y * delta <= 0:
+		velocity.y *= -0.9
+	
 		
 	if velocity.length() > 0:
-		velocity = velocity.normalized() * speed
 		$AnimatedSprite2D.play()
 	else:
 		$AnimatedSprite2D.stop()
