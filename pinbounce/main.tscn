@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://6fnjhj7yjv2d" path="res://tiles/border_tile.png" id="2_7mycd"]
 [ext_resource type="PackedScene" uid="uid://bnpdwr57njcd" path="res://paddle.tscn" id="3_h2yge"]
 [ext_resource type="PackedScene" uid="uid://dghw2wwq3h82d" path="res://wall.tscn" id="7_272bh"]
+[ext_resource type="PackedScene" uid="uid://d3gw3w3futfgo" path="res://Carrot.tscn" id="8_5vw27"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_272bh"]
 texture = ExtResource("1_1bvp3")
@@ -209,3 +210,8 @@ scale = Vector2(3, 26.8)
 [node name="Wall4" parent="." unique_id=1770469922 instance=ExtResource("7_272bh")]
 position = Vector2(1122, 328)
 scale = Vector2(3, 26.8)
+
+[node name="Area2D" parent="." unique_id=2055753811 instance=ExtResource("8_5vw27")]
+position = Vector2(551, 311)
+
+[node name="Game Master" type="Node" parent="." unique_id=590698266]
