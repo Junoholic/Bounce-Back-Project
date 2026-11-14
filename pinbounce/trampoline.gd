@@ -17,5 +17,6 @@ func _process(delta: float) -> void:
 	
 	
 	position.x += velocity.x * delta
-	position = position.clamp(Vector2.ZERO, screen_size)
+	print(velocity.x * delta, "  ", position.x)
+	#position = position.clamp(Vector2.ZERO, screen_size)
 	pass
