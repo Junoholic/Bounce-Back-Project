@@ -1,8 +1,7 @@
-extends Area2D
+extends RigidBody2D
 
 @export var speed = 400 
 var screen_size
-var ball_size
 var velocity = Vector2.ZERO
 
 
@@ -18,19 +17,8 @@ func _process(delta: float) -> void:
 	if Input.is_action_pressed("move_right"):
 		velocity.x += speed
 	if Input.is_action_pressed("move_left"):
-		velocity.x -= speed
-		
-	velocity.y += 1
+		velocity.x -= speed	
 	
-	if position.y + velocity.y * delta >= screen_size.y or position.y + velocity.y * delta <= 0:
-		velocity.y *= -0.9
-	
-		
-	if velocity.length() > 0:
-		$AnimatedSprite2D.play()
-	else:
-		$AnimatedSprite2D.stop()
-	
-	position += velocity * delta
-	position = position.clamp(Vector2.ZERO, screen_size)
+	position.x += velocity.x * delta
+	position.x = position.clamp(Vector2.ZERO, screen_size).x
 	pass

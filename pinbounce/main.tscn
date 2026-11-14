@@ -3,6 +3,9 @@
 [ext_resource type="Script" uid="uid://bogxr70wmuv4r" path="res://time_label.gd" id="1_ig7tw"]
 [ext_resource type="PackedScene" uid="uid://u5bgu0qf2gpr" path="res://Ball.tscn" id="2_0xm2m"]
 
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_0xm2m"]
+bounce = 0.9
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_450et"]
 size = Vector2(1208, 248.79001)
 
@@ -22,11 +25,12 @@ one_shot = true
 autostart = true
 
 [node name="Ball" parent="." unique_id=990906771 instance=ExtResource("2_0xm2m")]
-position = Vector2(655, 32)
+position = Vector2(569, 76)
+physics_material_override = SubResource("PhysicsMaterial_0xm2m")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1546942463]
 position = Vector2(28, 88)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=830696482]
-position = Vector2(565, 493)
+position = Vector2(556, 633)
 shape = SubResource("RectangleShape2D_450et")
