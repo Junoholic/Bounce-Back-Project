@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://2ool7smor085"]
+
+[node name="Main" type="Node" unique_id=397367065]
+
+[node name="Marker2D" type="Marker2D" parent="." unique_id=1469290145]
