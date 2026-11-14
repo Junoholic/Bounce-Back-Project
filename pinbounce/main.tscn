@@ -195,7 +195,7 @@ offset_top = 153.0
 offset_right = 1011.0
 offset_bottom = 248.0
 theme_override_fonts/font = ExtResource("1_h2yge")
-text = "zero
+text = "0
 
 "
 label_settings = SubResource("LabelSettings_kek77")
