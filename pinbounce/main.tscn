@@ -201,17 +201,18 @@ offset_top = 153.0
 offset_right = 1011.0
 offset_bottom = 248.0
 theme_override_fonts/font = ExtResource("1_h2yge")
-text = "Carrots
+text = "0
+
 "
 label_settings = SubResource("LabelSettings_kek77")
 script = ExtResource("9_efxa6")
 
 [node name="TextureRect" type="TextureRect" parent="CarrotCounter" unique_id=232755138]
 layout_mode = 0
-offset_left = 113.0
-offset_top = 7.0
-offset_right = 164.0
-offset_bottom = 58.0
+offset_left = 21.0
+offset_top = 1.0
+offset_right = 72.0
+offset_bottom = 52.0
 texture = ExtResource("10_dg77c")
 expand_mode = 1
 
@@ -221,7 +222,7 @@ offset_top = 60.0
 offset_right = 1090.0
 offset_bottom = 127.0
 theme_override_fonts/font = ExtResource("1_h2yge")
-text = "Time"
+text = "1"
 label_settings = SubResource("LabelSettings_272bh")
 horizontal_alignment = 1
 script = ExtResource("1_ig7tw")
@@ -234,9 +235,9 @@ autostart = true
 [node name="LevelLabel" type="Label" parent="TimeLabel" unique_id=332814014]
 layout_mode = 0
 offset_left = 11.0
-offset_top = 57.0
+offset_top = 37.0
 offset_right = 256.0
-offset_bottom = 177.0
+offset_bottom = 88.0
 theme_override_fonts/font = ExtResource("1_h2yge")
 text = "Level One"
 label_settings = SubResource("LabelSettings_5vw27")
