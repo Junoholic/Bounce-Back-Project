@@ -3,8 +3,8 @@
 [ext_resource type="Script" uid="uid://bx5a5lndofnr7" path="res://Paddle.gd" id="2_r112f"]
 [ext_resource type="Texture2D" uid="uid://8xmfyuuyl5k5" path="res://paddle.png" id="2_tbytw"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_450et"]
-size = Vector2(35, 35)
+[sub_resource type="ConvexPolygonShape2D" id="ConvexPolygonShape2D_4c57u"]
+points = PackedVector2Array(16.393442, -3.2786884, -4.9180326, -4.9180326, -13.88, -5.57, -16.79, -0.03, -14.055, 7.31, 6.557377, 6.557377, 16.393442, 3.2786884)
 
 [node name="PaddleParent" type="AnimatableBody2D" unique_id=647843333]
 
@@ -14,7 +14,7 @@ script = ExtResource("2_r112f")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Paddle" unique_id=496678308]
 scale = Vector2(0.61, 0.61)
-shape = SubResource("RectangleShape2D_450et")
+shape = SubResource("ConvexPolygonShape2D_4c57u")
 
 [node name="Sprite2D" type="Sprite2D" parent="Paddle/CollisionShape2D" unique_id=1582189228]
 scale = Vector2(0.2704918, 0.2704918)

@@ -4,7 +4,7 @@ var cooldown
 var baseposition
 var rotationMult = 8
 var length = 0.2
-var pivotDistance = 60
+var pivotDistance = -50
 var rot
 
 # Called when the node enters the scene tree for the first time.
@@ -26,9 +26,9 @@ func _process(delta: float) -> void:
 	
 	if cooldown >= 0:
 		if cooldown >= length / 2:
-			rot = rotationMult * (length - cooldown)
+			rot = -rotationMult * (length - cooldown)
 		else:
-			rot = rotationMult * cooldown
+			rot = -rotationMult * cooldown
 			
 		rotation = rot
 		cooldown -= delta
