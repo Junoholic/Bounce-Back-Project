@@ -1,1 +1,5 @@
-
+Powerups:
+wasd control for short amount of time
+launch like golf
+multiball
+zero gravity
