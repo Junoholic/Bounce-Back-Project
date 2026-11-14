@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Pinbounce"
-run/main_scene="uid://ck32twtjweevn"
+run/main_scene="uid://2ool7smor085"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="res://icon.svg"
 
