@@ -213,7 +213,6 @@ tile_set = SubResource("TileSet_r4utc")
 
 [node name="Ball" parent="." unique_id=895890468 instance=ExtResource("9_rwvar")]
 position = Vector2(121.585, 505)
-script = null
 
 [node name="LevelTime" type="Sprite2D" parent="." unique_id=1707663179]
 position = Vector2(592.28345, 165.8562)
