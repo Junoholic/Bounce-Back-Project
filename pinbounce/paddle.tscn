@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://8xmfyuuyl5k5" path="res://paddle.png" id="2_tbytw"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_450et"]
-size = Vector2(231, 51)
+size = Vector2(35, 35)
 
 [node name="PaddleParent" type="AnimatableBody2D" unique_id=647843333]
 
