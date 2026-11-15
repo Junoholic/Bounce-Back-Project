@@ -15,7 +15,7 @@ func _process(delta: float) -> void:
 	if carrots == 1:
 		$Box/OpenBox.visible = true
 		$Box/ClosedBox.visible = false
-		$Box/Lid.disabled = false
+		$Box/Lid.disabled = true
 	pass
 
 
