@@ -1,5 +1,7 @@
 [gd_scene format=3 uid="uid://bxkf3tb773ucd"]
 
+[ext_resource type="Script" uid="uid://c8ejehd34e1sn" path="res://trampoline.gd" id="1_d0j4r"]
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_y2cqg"]
 size = Vector2(120, 40)
 
@@ -7,6 +9,8 @@ size = Vector2(120, 40)
 load_path = "res://.godot/imported/trampoline.png-6d23656cb6208ca169846752748f834d.ctex"
 
 [node name="Trampoline" type="AnimatableBody2D" unique_id=607760481]
+script = ExtResource("1_d0j4r")
+speed = null
 
 [node name="Trampoline" type="AnimatableBody2D" parent="." unique_id=1605999557]
 
