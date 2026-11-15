@@ -252,6 +252,7 @@ position = Vector2(957, 445)
 
 [node name="Ball" parent="." unique_id=895890468 instance=ExtResource("9_rwvar")]
 position = Vector2(121.585, 505)
+script = null
 
 [node name="Trampoline" parent="." unique_id=607760481 instance=ExtResource("10_6yo2h")]
 position = Vector2(581, 517)
@@ -317,7 +318,7 @@ offset_right = 1047.0
 offset_bottom = 251.0
 scale = Vector2(1.04, 1.04)
 theme_override_fonts/font = ExtResource("6_f0hgy")
-text = "0/1
+text = "0/2
 
 "
 label_settings = SubResource("LabelSettings_kek77")

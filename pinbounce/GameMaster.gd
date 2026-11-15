@@ -20,7 +20,7 @@ func _process(delta: float) -> void:
 	if Input.is_action_pressed("reset") and timer > 2:
 		reset()
 	
-	if carrots == 1:
+	if carrots == 2:
 		turning = true
 	pass
 
@@ -52,7 +52,7 @@ func _on_area_2d_body_entered(body: Node2D) -> void:
 
 
 func _on_win_body_entered(body: Node2D) -> void:
-	if carrots == 1:
+	if carrots == 2:
 		get_tree().change_scene_to_file("res://WinScreen.tscn")
 	pass # Replace with function body.
 	
