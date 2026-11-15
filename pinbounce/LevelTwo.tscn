@@ -11,6 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://u5bgu0qf2gpr" path="res://Ball.tscn" id="9_ywo3r"]
 [ext_resource type="PackedScene" uid="uid://bxkf3tb773ucd" path="res://trampoline.tscn" id="10_8dbpo"]
 [ext_resource type="PackedScene" uid="uid://bnpdwr57njcd" path="res://paddle.tscn" id="11_epxhw"]
+[ext_resource type="Script" uid="uid://duu0kujmur7rj" path="res://trampoline2.gd" id="12_dbpel"]
 [ext_resource type="Texture2D" uid="uid://d0jowxxc5qxcv" path="res://box_closed.png" id="12_s6gwj"]
 [ext_resource type="Texture2D" uid="uid://d270lusqo6t3a" path="res://box_open.png" id="13_ouljj"]
 [ext_resource type="Texture2D" uid="uid://dcd77i0dnkmho" path="res://rotator.png" id="14_y485g"]
@@ -254,6 +255,7 @@ position = Vector2(121.585, 505)
 position = Vector2(632, 332)
 rotation = -1.5613856
 physics_material_override = SubResource("PhysicsMaterial_nqy13")
+script = ExtResource("12_dbpel")
 
 [node name="PaddleParent" parent="." unique_id=647843333 instance=ExtResource("11_epxhw")]
 position = Vector2(303, 519)
