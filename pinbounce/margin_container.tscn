@@ -76,6 +76,8 @@ texture = ExtResource("1_6jxja")
 [sub_resource type="TileSet" id="TileSet_y2cqg"]
 sources/0 = SubResource("TileSetAtlasSource_ifl63")
 
+[sub_resource type="LabelSettings" id="LabelSettings_y2cqg"]
+
 [node name="TitleScreen" type="Control" unique_id=316085665]
 layout_mode = 3
 anchors_preset = 15
@@ -133,6 +135,24 @@ script = ExtResource("3_bachm")
 position = Vector2(961.9999, 453)
 scale = Vector2(3.015625, 3.015625)
 texture = ExtResource("4_hhuvf")
+
+[node name="Label" type="Label" parent="." unique_id=288578794]
+layout_mode = 0
+offset_left = 26.0
+offset_top = 93.0
+offset_right = 355.0
+offset_bottom = 531.0
+theme_override_fonts/font = ExtResource("1_r6qsq")
+text = "Controls:
+
+A and D to move Bar
+One To move Paddle
+R to Reset if Stuck
+Good Luck!
+
+Collect The Carrots and 
+Bounce Back!"
+label_settings = SubResource("LabelSettings_y2cqg")
 
 [connection signal="pressed" from="PanelContainer/VBoxContainer/Play" to="PanelContainer/VBoxContainer/Play" method="_on_pressed"]
 [connection signal="pressed" from="PanelContainer/VBoxContainer/Quit" to="PanelContainer/VBoxContainer/Quit" method="_on_pressed"]
