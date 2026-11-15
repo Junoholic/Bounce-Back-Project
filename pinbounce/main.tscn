@@ -201,16 +201,16 @@ position = Vector2(1122, 328)
 scale = Vector2(3, 26.8)
 
 [node name="LevelTime" type="Sprite2D" parent="." unique_id=1707663179]
-position = Vector2(579, 131)
-scale = Vector2(1.1072866, 1.0610465)
+position = Vector2(592.28345, 165.8562)
+scale = Vector2(1.308072, 1.2534472)
 texture = ExtResource("9_074og")
 
 [node name="TimeLabel" type="Label" parent="." unique_id=1343628223]
-offset_left = 506.0
-offset_top = 122.99999
-offset_right = 775.0
-offset_bottom = 190.0
-scale = Vector2(0.5599951, 0.5599951)
+offset_left = 492.0
+offset_top = 152.0
+offset_right = 761.0
+offset_bottom = 219.0
+scale = Vector2(0.75613993, 0.75613993)
 theme_override_fonts/font = ExtResource("1_h2yge")
 text = "1"
 label_settings = SubResource("LabelSettings_272bh")
@@ -223,12 +223,13 @@ one_shot = true
 autostart = true
 
 [node name="LevelLabel" type="Label" parent="." unique_id=332814014]
-offset_left = 523.00006
-offset_top = 77.0
-offset_right = 768.00006
-offset_bottom = 128.0
-scale = Vector2(0.48, 0.48)
+offset_left = 427.0
+offset_top = 90.0
+offset_right = 787.2942
+offset_bottom = 165.0
+scale = Vector2(0.9098504, 0.9098504)
 theme_override_fonts/font = ExtResource("1_h2yge")
+theme_override_font_sizes/font_size = 24
 text = "Level One"
 label_settings = SubResource("LabelSettings_5vw27")
 horizontal_alignment = 1
@@ -309,10 +310,10 @@ texture = ExtResource("10_dg77c")
 expand_mode = 1
 
 [node name="TextureProgressBar" type="TextureProgressBar" parent="." unique_id=991048751]
-offset_left = 70.0
-offset_top = 69.0
-offset_right = 110.0
-offset_bottom = 109.0
-scale = Vector2(0.47321442, 0.5915176)
+offset_left = 154.0
+offset_top = 50.0
+offset_right = 286.3127
+offset_bottom = 178.0
+scale = Vector2(1.0732152, 1.1490823)
 texture_under = ExtResource("19_82xsv")
 texture_progress = ExtResource("20_getpj")
