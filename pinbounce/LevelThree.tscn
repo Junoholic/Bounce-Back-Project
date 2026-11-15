@@ -17,7 +17,7 @@
 [ext_resource type="Texture2D" uid="uid://dcd77i0dnkmho" path="res://rotator.png" id="15_1yqkr"]
 [ext_resource type="Script" uid="uid://bhrt0jjk4n56u" path="res://animatable_body_2d.gd" id="16_p4y27"]
 [ext_resource type="Texture2D" uid="uid://c2kjuqh6x1b60" path="res://carrot_holder.png" id="17_hiw3c"]
-[ext_resource type="Script" uid="uid://c6vtuac8rxw18" path="res://carrot_counter.gd" id="18_hicg6"]
+[ext_resource type="Script" uid="uid://b5mbdeluqn4iq" path="res://carrot_counter2.gd" id="18_yggun"]
 [ext_resource type="Texture2D" uid="uid://b7cixl60ibsoq" path="res://carrot.png" id="19_heilv"]
 [ext_resource type="Script" uid="uid://cawoecw41q1ni" path="res://area_2d.gd" id="20_4d4yt"]
 [ext_resource type="PackedScene" uid="uid://bwu8q3i6e3dkp" path="res://texture_progress_bar.tscn" id="21_pf2xf"]
@@ -205,12 +205,12 @@ position = Vector2(576, 626)
 scale = Vector2(57.6, 3)
 
 [node name="Wall6" parent="." unique_id=1820506169 instance=ExtResource("4_n7hh0")]
-position = Vector2(281, 483)
+position = Vector2(310, 487.99997)
 rotation = 0.08726646
-scale = Vector2(5.34, 1.06)
+scale = Vector2(12.475, 1.06)
 
 [node name="Wall9" parent="." unique_id=1243361459 instance=ExtResource("4_n7hh0")]
-position = Vector2(617, 428)
+position = Vector2(651.00006, 428)
 rotation = -0.5235988
 scale = Vector2(5.34, 1.06)
 
@@ -223,6 +223,11 @@ scale = Vector2(5.34, 1.06)
 position = Vector2(346.00003, 212)
 rotation = -0.08726646
 scale = Vector2(10.715, 1.06)
+
+[node name="Wall10" parent="." unique_id=1581306661 instance=ExtResource("4_n7hh0")]
+position = Vector2(427, 238)
+rotation = 2.0315633
+scale = Vector2(3.595, 1.06)
 
 [node name="Wall3" parent="." unique_id=1673131253 instance=ExtResource("4_n7hh0")]
 position = Vector2(30, 328)
@@ -270,7 +275,7 @@ label_settings = SubResource("LabelSettings_5vw27")
 horizontal_alignment = 1
 
 [node name="Carrot" parent="." unique_id=2055753811 instance=ExtResource("9_ise7h")]
-position = Vector2(367, 295)
+position = Vector2(279.00003, 411)
 
 [node name="Carrot2" parent="." unique_id=1137378693 instance=ExtResource("9_ise7h")]
 position = Vector2(512, 366.00003)
@@ -284,23 +289,13 @@ position = Vector2(321, 144)
 [node name="Carrot5" parent="." unique_id=1254290989 instance=ExtResource("9_ise7h")]
 position = Vector2(1048, 133)
 
-[node name="Carrot6" parent="." unique_id=905724073 instance=ExtResource("9_ise7h")]
-position = Vector2(1048, 133)
-
-[node name="Carrot7" parent="." unique_id=700026962 instance=ExtResource("9_ise7h")]
-position = Vector2(817, 132)
-
 [node name="Trampoline" parent="." unique_id=607760481 instance=ExtResource("10_61v5q")]
 position = Vector2(679, 219)
 physics_material_override = SubResource("PhysicsMaterial_nqy13")
 script = ExtResource("11_yggun")
 
 [node name="PaddleParent" parent="." unique_id=647843333 instance=ExtResource("12_gbuny")]
-position = Vector2(451, 467.00003)
-scale = Vector2(6, 6)
-
-[node name="PaddleParent2" parent="." unique_id=734251957 instance=ExtResource("12_gbuny")]
-position = Vector2(315.00003, 537)
+position = Vector2(498, 520)
 scale = Vector2(6, 6)
 
 [node name="Box" type="StaticBody2D" parent="." unique_id=1635138446]
@@ -362,7 +357,7 @@ text = "0/1
 
 "
 label_settings = SubResource("LabelSettings_kek77")
-script = ExtResource("18_hicg6")
+script = ExtResource("18_yggun")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=232755138]
 offset_left = 925.0

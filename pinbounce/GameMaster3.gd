@@ -21,7 +21,7 @@ func _process(delta: float) -> void:
 	if Input.is_action_pressed("reset") and timer > 2:
 		reset()
 	
-	if carrots == 6:
+	if carrots == 4:
 		turning = true
 	pass
 
@@ -53,7 +53,7 @@ func _on_area_2d_body_entered(body: Node2D) -> void:
 
 
 func _on_win_body_entered(body: Node2D) -> void:
-	if carrots == 6:
+	if carrots == 4:
 		$AudioStreamPlayer.stream = Catch
 		$AudioStreamPlayer.play()
 		$Ball.queue_free()
