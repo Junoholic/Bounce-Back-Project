@@ -1,6 +1,8 @@
 extends Node
 
 var carrots = 0
+var t = 1
+var turning = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -13,10 +15,20 @@ func _process(delta: float) -> void:
 		get_tree().reload_current_scene()
 	
 	if carrots == 1:
-		$Box/OpenBox.visible = true
-		$Box/ClosedBox.visible = false
-		$Box/Lid.disabled = true
+		turning = true
 	pass
+	
+	if turning:
+		$Box/Handle.rotation = (t) / 2 * 3.1415926
+		if t == 0:
+			$Box/OpenBox.visible = true
+			$Box/ClosedBox.visible = false
+			$Box/Lid.disabled = true
+			turning = false
+		t -= delta
+	
+	if t < 0:
+		t = 0
 
 
 func _on_area_2d_body_entered(body: Node2D) -> void:
