@@ -355,9 +355,6 @@ texture = ExtResource("21_nqy13")
 [node name="Wedge" type="StaticBody2D" parent="." unique_id=1139069382]
 position = Vector2(192, 592)
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Wedge" unique_id=764896932]
-polygon = PackedVector2Array(0, 0, 0, -80, 79, 0)
-
 [node name="Wedge2" type="StaticBody2D" parent="." unique_id=879348579]
 position = Vector2(1091, 592)
 
