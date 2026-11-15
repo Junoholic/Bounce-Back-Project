@@ -18,6 +18,8 @@
 [ext_resource type="Texture2D" uid="uid://d270lusqo6t3a" path="res://box_open.png" id="14_2cqfq"]
 [ext_resource type="Texture2D" uid="uid://dcd77i0dnkmho" path="res://rotator.png" id="14_w48qg"]
 [ext_resource type="Script" uid="uid://bhrt0jjk4n56u" path="res://animatable_body_2d.gd" id="15_vivmo"]
+[ext_resource type="Texture2D" uid="uid://xh3s8lao3q52" path="res://game_points.png" id="19_82xsv"]
+[ext_resource type="Texture2D" uid="uid://dxek8i0a7jwc2" path="res://lightbulb.png" id="20_getpj"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_272bh"]
 texture = ExtResource("1_1bvp3")
@@ -157,10 +159,6 @@ texture = ExtResource("2_7mycd")
 sources/5 = SubResource("TileSetAtlasSource_272bh")
 sources/6 = SubResource("TileSetAtlasSource_5vw27")
 
-[sub_resource type="LabelSettings" id="LabelSettings_kek77"]
-shadow_color = Color(0, 0, 0, 0.7882353)
-shadow_offset = Vector2(2, 2)
-
 [sub_resource type="LabelSettings" id="LabelSettings_272bh"]
 shadow_color = Color(0, 0, 0, 0.7882353)
 shadow_offset = Vector2(2, 2)
@@ -172,6 +170,10 @@ shadow_offset = Vector2(2, 2)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_25y7d"]
 size = Vector2(17.59322, 3.8983078)
+
+[sub_resource type="LabelSettings" id="LabelSettings_kek77"]
+shadow_color = Color(0, 0, 0, 0.7882353)
+shadow_offset = Vector2(2, 2)
 
 [node name="Main" type="Node" unique_id=397367065]
 script = ExtResource("9_kek77")
@@ -197,38 +199,6 @@ scale = Vector2(3, 26.8)
 [node name="Wall4" parent="." unique_id=1770469922 instance=ExtResource("7_272bh")]
 position = Vector2(1122, 328)
 scale = Vector2(3, 26.8)
-
-[node name="TextureProgressBar" type="TextureProgressBar" parent="." unique_id=991048751]
-offset_left = -301.0
-offset_top = 68.0
-offset_right = -261.0
-offset_bottom = 108.0
-
-[node name="CarrotHolder" type="Sprite2D" parent="." unique_id=1021622552]
-position = Vector2(939, 135)
-texture = ExtResource("5_yaehf")
-
-[node name="CarrotCounter" type="Label" parent="." unique_id=1779254372]
-offset_left = 935.0
-offset_top = 107.0
-offset_right = 1047.0
-offset_bottom = 251.0
-scale = Vector2(1.04, 1.04)
-theme_override_fonts/font = ExtResource("1_h2yge")
-text = "0
-
-"
-label_settings = SubResource("LabelSettings_kek77")
-script = ExtResource("9_efxa6")
-
-[node name="TextureRect" type="TextureRect" parent="." unique_id=232755138]
-offset_left = 925.0
-offset_top = 105.99999
-offset_right = 976.0
-offset_bottom = 157.0
-scale = Vector2(-1.0854325, 0.96862596)
-texture = ExtResource("10_dg77c")
-expand_mode = 1
 
 [node name="LevelTime" type="Sprite2D" parent="." unique_id=1707663179]
 position = Vector2(579, 131)
@@ -314,3 +284,38 @@ shape = SubResource("RectangleShape2D_25y7d")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D" unique_id=1022186117]
 polygon = PackedVector2Array(192, 592, 256, 592, 192, 544)
+
+[node name="CarrotHolder" type="Sprite2D" parent="." unique_id=1021622552]
+position = Vector2(939, 135)
+texture = ExtResource("5_yaehf")
+
+[node name="CarrotCounter" type="Label" parent="." unique_id=1779254372]
+offset_left = 935.0
+offset_top = 107.0
+offset_right = 1047.0
+offset_bottom = 251.0
+scale = Vector2(1.04, 1.04)
+theme_override_fonts/font = ExtResource("1_h2yge")
+text = "0
+
+"
+label_settings = SubResource("LabelSettings_kek77")
+script = ExtResource("9_efxa6")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=232755138]
+offset_left = 925.0
+offset_top = 105.99999
+offset_right = 976.0
+offset_bottom = 157.0
+scale = Vector2(-1.0854325, 0.96862596)
+texture = ExtResource("10_dg77c")
+expand_mode = 1
+
+[node name="TextureProgressBar" type="TextureProgressBar" parent="." unique_id=991048751]
+offset_left = 70.0
+offset_top = 69.0
+offset_right = 110.0
+offset_bottom = 109.0
+scale = Vector2(0.47321442, 0.5915176)
+texture_under = ExtResource("19_82xsv")
+texture_progress = ExtResource("20_getpj")
