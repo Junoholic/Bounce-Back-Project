@@ -286,9 +286,6 @@ position = Vector2(414, 133)
 [node name="Carrot4" parent="." unique_id=291470804 instance=ExtResource("9_ise7h")]
 position = Vector2(321, 144)
 
-[node name="Carrot5" parent="." unique_id=1254290989 instance=ExtResource("9_ise7h")]
-position = Vector2(1048, 133)
-
 [node name="Trampoline" parent="." unique_id=607760481 instance=ExtResource("10_61v5q")]
 position = Vector2(679, 219)
 physics_material_override = SubResource("PhysicsMaterial_nqy13")
