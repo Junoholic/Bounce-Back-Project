@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://bxkf3tb773ucd"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_y2cqg"]
+size = Vector2(120, 40)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_woddn"]
+load_path = "res://.godot/imported/trampoline.png-6d23656cb6208ca169846752748f834d.ctex"
+
+[node name="Trampoline" type="AnimatableBody2D" unique_id=607760481]
+
+[node name="Trampoline" type="AnimatableBody2D" parent="." unique_id=1605999557]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Trampoline" unique_id=1288479015]
+shape = SubResource("RectangleShape2D_y2cqg")
+
+[node name="Sprite2D" type="Sprite2D" parent="Trampoline/CollisionShape2D" unique_id=1213716037]
+texture = SubResource("CompressedTexture2D_woddn")
