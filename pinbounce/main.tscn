@@ -21,6 +21,7 @@
 [ext_resource type="PackedScene" uid="uid://bwu8q3i6e3dkp" path="res://texture_progress_bar.tscn" id="20_82xsv"]
 [ext_resource type="Script" uid="uid://cawoecw41q1ni" path="res://area_2d.gd" id="21_getpj"]
 [ext_resource type="Texture2D" uid="uid://cj31oou580bqu" path="res://lightbulb - Copy.png" id="21_ryguw"]
+[ext_resource type="Script" uid="uid://vsy2yuj7ieuc" path="res://audio_stream_player.gd" id="22_ryguw"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_272bh"]
 texture = ExtResource("1_1bvp3")
@@ -361,6 +362,7 @@ position = Vector2(-3, 0)
 polygon = PackedVector2Array(0, 0, 0, -80, -79, 0)
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=306448536]
+script = ExtResource("22_ryguw")
 
 [connection signal="body_entered" from="Box/Win" to="." method="_on_win_body_entered"]
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
