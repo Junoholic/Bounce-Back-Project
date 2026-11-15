@@ -249,9 +249,6 @@ position = Vector2(72, 0)
 [node name="Wall15" parent="Wall8" unique_id=459732354 instance=ExtResource("4_n7hh0")]
 position = Vector2(72, 0)
 
-[node name="Wall12" parent="Wall8" unique_id=1765748975 instance=ExtResource("4_n7hh0")]
-position = Vector2(144, 0)
-
 [node name="Wall13" parent="Wall8" unique_id=854376607 instance=ExtResource("4_n7hh0")]
 position = Vector2(-72, 0)
 
