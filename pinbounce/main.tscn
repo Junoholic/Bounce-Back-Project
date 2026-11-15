@@ -11,6 +11,7 @@
 [ext_resource type="Script" uid="uid://c6vtuac8rxw18" path="res://carrot_counter.gd" id="9_efxa6"]
 [ext_resource type="Script" uid="uid://d3tq21q2d2aew" path="res://GameMaster.gd" id="9_kek77"]
 [ext_resource type="Texture2D" uid="uid://b7cixl60ibsoq" path="res://carrot.png" id="10_dg77c"]
+[ext_resource type="PackedScene" uid="uid://bxkf3tb773ucd" path="res://trampoline.tscn" id="12_dg77c"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_272bh"]
 texture = ExtResource("1_1bvp3")
@@ -246,3 +247,6 @@ position = Vector2(576, 350)
 
 [node name="Ball" parent="." unique_id=895890468 instance=ExtResource("2_0xm2m")]
 position = Vector2(593, 149)
+
+[node name="Trampoline" parent="." unique_id=607760481 instance=ExtResource("12_dg77c")]
+position = Vector2(348, 550)
