@@ -14,6 +14,8 @@ func _integrate_forces(state):
 		velocity.x += speed
 	if Input.is_action_pressed("move_left"):
 		velocity.x -= speed	
+	if Input.is_action_pressed("reset"):
+		get_tree().reload_current_scene()
 	state = velocity
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
