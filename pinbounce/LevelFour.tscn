@@ -370,9 +370,7 @@ position = Vector2(1091, 592)
 position = Vector2(-3, 0)
 polygon = PackedVector2Array(0, 0, 0, -80, -79, 0)
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=145341038]
-
-[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="." unique_id=2010457730]
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=2010457730]
 script = ExtResource("22_1blob")
 
 [connection signal="body_entered" from="Box/Win" to="." method="_on_win_body_entered"]
