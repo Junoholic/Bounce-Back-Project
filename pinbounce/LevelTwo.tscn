@@ -209,9 +209,9 @@ tile_map_data = PackedByteArray("AAAEAAQABQAEAAQAAAAEAAUABQAEAAUAAAAEAAYABQAEAAY
 tile_set = SubResource("TileSet_r4utc")
 
 [node name="Wall9" parent="." unique_id=504912606 instance=ExtResource("4_12awh")]
-position = Vector2(232.00003, 534)
+position = Vector2(233.00002, 530)
 rotation = -1.5717794
-scale = Vector2(2.5, 2.5)
+scale = Vector2(1.6599585, 2.4208252)
 
 [node name="Ball" parent="." unique_id=895890468 instance=ExtResource("9_ywo3r")]
 position = Vector2(121.585, 505)
