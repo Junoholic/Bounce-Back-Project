@@ -11,4 +11,4 @@ func _process(delta: float) -> void:
 	pass
 
 func _on_pressed() -> void:
-	get_tree().quit
+	get_tree().quit()
