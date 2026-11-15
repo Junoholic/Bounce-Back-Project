@@ -60,7 +60,7 @@ func _on_win_body_entered(body: Node2D) -> void:
 		$Box/OpenBox.visible = false
 		$Box/ClosedBox.visible = true
 		await get_tree().create_timer(1).timeout
-		get_tree().change_scene_to_file("res://WinScreen2-3.tscn")
+		get_tree().change_scene_to_file("res://WinScreen3-4.tscn")
 	pass # Replace with function body.
 	
 func reset():

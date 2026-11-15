@@ -214,11 +214,6 @@ position = Vector2(726, 513.99994)
 rotation = -0.5235988
 scale = Vector2(5.34, 1.06)
 
-[node name="Wall7" parent="." unique_id=903428918 instance=ExtResource("4_n7hh0")]
-position = Vector2(67.35, 329.545)
-rotation = 1.2217305
-scale = Vector2(5.34, 1.06)
-
 [node name="Wall8" parent="." unique_id=2128691387 instance=ExtResource("4_n7hh0")]
 position = Vector2(346.00003, 212)
 rotation = -0.08726646
