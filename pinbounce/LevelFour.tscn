@@ -16,7 +16,7 @@
 [ext_resource type="Texture2D" uid="uid://dcd77i0dnkmho" path="res://rotator.png" id="14_ejexu"]
 [ext_resource type="Script" uid="uid://bhrt0jjk4n56u" path="res://animatable_body_2d.gd" id="15_5v0ou"]
 [ext_resource type="Texture2D" uid="uid://c2kjuqh6x1b60" path="res://carrot_holder.png" id="16_eu3xk"]
-[ext_resource type="Script" uid="uid://c6vtuac8rxw18" path="res://carrot_counter.gd" id="17_0qmrv"]
+[ext_resource type="Script" uid="uid://dob5o0ld3t60j" path="res://carrot_counter3.gd" id="17_1blob"]
 [ext_resource type="Texture2D" uid="uid://b7cixl60ibsoq" path="res://carrot.png" id="18_7mlcv"]
 [ext_resource type="Script" uid="uid://cawoecw41q1ni" path="res://area_2d.gd" id="19_m113r"]
 [ext_resource type="PackedScene" uid="uid://bwu8q3i6e3dkp" path="res://texture_progress_bar.tscn" id="20_og6p5"]
@@ -263,6 +263,16 @@ physics_material_override = SubResource("PhysicsMaterial_nqy13")
 position = Vector2(278, 480.00003)
 scale = Vector2(6, 6)
 
+[node name="ClosedBox2" type="Sprite2D" parent="." unique_id=1597200798]
+position = Vector2(127.999985, 527.99994)
+scale = Vector2(1.0000001, 1.0000001)
+texture = ExtResource("12_2j2hc")
+
+[node name="Handle2" type="Sprite2D" parent="ClosedBox2" unique_id=1488320994]
+position = Vector2(4.012512, 17.750061)
+scale = Vector2(1.0324999, 1.0324999)
+texture = ExtResource("14_ejexu")
+
 [node name="Box" type="StaticBody2D" parent="." unique_id=1635138446]
 scale = Vector2(7.375, 7.375)
 
@@ -322,7 +332,7 @@ text = "0/2
 
 "
 label_settings = SubResource("LabelSettings_kek77")
-script = ExtResource("17_0qmrv")
+script = ExtResource("17_1blob")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=232755138]
 offset_left = 925.0

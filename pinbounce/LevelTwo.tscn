@@ -272,6 +272,16 @@ position = Vector2(515, 476.00003)
 rotation = -1.5685769
 scale = Vector2(6, 6)
 
+[node name="ClosedBox2" type="Sprite2D" parent="." unique_id=1589053987]
+position = Vector2(127.999985, 527.99994)
+scale = Vector2(1.0000001, 1.0000001)
+texture = ExtResource("12_s6gwj")
+
+[node name="Handle2" type="Sprite2D" parent="ClosedBox2" unique_id=297305390]
+position = Vector2(4.012512, 17.750061)
+scale = Vector2(1.0324999, 1.0324999)
+texture = ExtResource("14_y485g")
+
 [node name="Box" type="StaticBody2D" parent="." unique_id=1635138446]
 scale = Vector2(7.375, 7.375)
 
@@ -280,15 +290,15 @@ position = Vector2(3.97321, 0.000541687)
 scale = Vector2(0.84887975, 0.9999933)
 polygon = PackedVector2Array(5.542311, 80.27119, 25.988, 80.27119, 25.988, 62.915134, 24.710146, 62.915134, 24.710146, 79.18643, 6.820167, 79.18643, 6.820167, 62.915134, 5.542311, 62.915134)
 
-[node name="ClosedBox" type="Sprite2D" parent="Box" unique_id=1506225181]
-position = Vector2(17.35593, 71.593216)
-scale = Vector2(0.13559324, 0.13559324)
-texture = ExtResource("12_s6gwj")
-
 [node name="OpenBox" type="Sprite2D" parent="Box" unique_id=2066991598]
 position = Vector2(17.35593, 71.593216)
 scale = Vector2(0.13559324, 0.13559324)
 texture = ExtResource("13_ouljj")
+
+[node name="ClosedBox" type="Sprite2D" parent="Box" unique_id=1506225181]
+position = Vector2(17.35593, 71.593216)
+scale = Vector2(0.13559324, 0.13559324)
+texture = ExtResource("12_s6gwj")
 
 [node name="Handle" type="Sprite2D" parent="Box" unique_id=1470700708]
 position = Vector2(17.9, 74)
