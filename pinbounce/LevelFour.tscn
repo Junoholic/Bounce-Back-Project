@@ -211,6 +211,10 @@ scale = Vector2(3, 26.8)
 position = Vector2(1122, 328)
 scale = Vector2(3, 26.8)
 
+[node name="Ball" parent="." unique_id=895890468 instance=ExtResource("9_rwvar")]
+position = Vector2(121.585, 505)
+script = null
+
 [node name="LevelTime" type="Sprite2D" parent="." unique_id=1707663179]
 position = Vector2(592.28345, 165.8562)
 scale = Vector2(1.308072, 1.2534472)
@@ -250,10 +254,6 @@ position = Vector2(367, 295)
 
 [node name="Carrot2" parent="." unique_id=608814297 instance=ExtResource("8_vrkcu")]
 position = Vector2(957, 445)
-
-[node name="Ball" parent="." unique_id=895890468 instance=ExtResource("9_rwvar")]
-position = Vector2(121.585, 505)
-script = null
 
 [node name="Trampoline" parent="." unique_id=607760481 instance=ExtResource("10_6yo2h")]
 position = Vector2(581, 517)
