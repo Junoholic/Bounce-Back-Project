@@ -248,7 +248,7 @@ position = Vector2(576, 350)
 position = Vector2(121.585, 505)
 
 [node name="Trampoline" parent="." unique_id=607760481 instance=ExtResource("12_dg77c")]
-position = Vector2(348, 550)
+position = Vector2(458.47, 550)
 
 [node name="PaddleParent" parent="." unique_id=647843333 instance=ExtResource("3_h2yge")]
 position = Vector2(756, 532)

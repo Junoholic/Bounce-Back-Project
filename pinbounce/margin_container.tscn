@@ -136,7 +136,7 @@ theme_override_fonts/font = ExtResource("1_r6qsq")
 text = "Controls:
 
 A and D to move Bar
-One To move Paddle
+W To move Paddle
 R to Reset if Stuck
 Good Luck!
 
