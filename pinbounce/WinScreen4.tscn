@@ -1,15 +1,14 @@
 [gd_scene format=4 uid="uid://1e841r4lg2yv"]
 
-[ext_resource type="Script" uid="uid://d0bpr3otd2bmr" path="res://win_screen.gd" id="1_rh3vv"]
-[ext_resource type="Texture2D" uid="uid://6fnjhj7yjv2d" path="res://tiles/border_tile.png" id="2_3sbtw"]
-[ext_resource type="Texture2D" uid="uid://dn8hgpf5e6wq3" path="res://victory_anim.png" id="3_diw3o"]
-[ext_resource type="FontFile" uid="uid://b5kkw0b81bcqr" path="res://Pixeled.ttf" id="4_xkgca"]
-[ext_resource type="Script" uid="uid://dga65m5881fvb" path="res://NextLevel3.gd" id="5_rh3vv"]
-[ext_resource type="Script" uid="uid://1ri3neoasec2" path="res://MainMenuVictory.gd" id="6_u00ki"]
-[ext_resource type="Texture2D" uid="uid://dtsc6wicdffhp" path="res://victory_title.png" id="7_d5l64"]
+[ext_resource type="Script" uid="uid://d0bpr3otd2bmr" path="res://win_screen.gd" id="1_r7x6e"]
+[ext_resource type="Texture2D" uid="uid://6fnjhj7yjv2d" path="res://tiles/border_tile.png" id="2_68emd"]
+[ext_resource type="Texture2D" uid="uid://dn8hgpf5e6wq3" path="res://victory_anim.png" id="3_oq7xo"]
+[ext_resource type="FontFile" uid="uid://b5kkw0b81bcqr" path="res://Pixeled.ttf" id="4_73gfr"]
+[ext_resource type="Script" uid="uid://1ri3neoasec2" path="res://MainMenuVictory.gd" id="6_742v2"]
+[ext_resource type="Texture2D" uid="uid://dtsc6wicdffhp" path="res://victory_title.png" id="7_4e2nk"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_y2u78"]
-texture = ExtResource("2_3sbtw")
+texture = ExtResource("2_68emd")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -79,19 +78,19 @@ texture = ExtResource("2_3sbtw")
 sources/0 = SubResource("TileSetAtlasSource_y2u78")
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ujsyp"]
-atlas = ExtResource("3_diw3o")
+atlas = ExtResource("3_oq7xo")
 region = Rect2(0, 0, 128, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vr2rx"]
-atlas = ExtResource("3_diw3o")
+atlas = ExtResource("3_oq7xo")
 region = Rect2(128, 0, 128, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_urab4"]
-atlas = ExtResource("3_diw3o")
+atlas = ExtResource("3_oq7xo")
 region = Rect2(256, 0, 128, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4sxsc"]
-atlas = ExtResource("3_diw3o")
+atlas = ExtResource("3_oq7xo")
 region = Rect2(384, 0, 128, 64)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_uu1xr"]
@@ -121,7 +120,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_rh3vv")
+script = ExtResource("1_r7x6e")
 metadata/_edit_use_anchors_ = true
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=4012846]
@@ -145,32 +144,19 @@ offset_bottom = 448.0
 size_flags_horizontal = 4
 size_flags_vertical = 4
 
-[node name="Play" type="Button" parent="VBoxContainer" unique_id=1959633140]
+[node name="Play2" type="Button" parent="VBoxContainer" unique_id=831868883]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
-theme_override_fonts/font = ExtResource("4_xkgca")
-text = "Next Level
-"
-script = ExtResource("5_rh3vv")
-
-[node name="Play" type="Button" parent="VBoxContainer/Play" unique_id=831868883]
-layout_mode = 0
-offset_top = 67.0
-offset_right = 155.0
-offset_bottom = 121.0
-size_flags_horizontal = 4
-size_flags_vertical = 4
-theme_override_fonts/font = ExtResource("4_xkgca")
+theme_override_fonts/font = ExtResource("4_73gfr")
 text = "Main Menu"
-script = ExtResource("6_u00ki")
+script = ExtResource("6_742v2")
 
 [node name="VictoryTitle" type="Sprite2D" parent="." unique_id=1657938119]
 position = Vector2(588, 86.999954)
 scale = Vector2(5.0470057, 5.0470057)
-texture = ExtResource("7_d5l64")
+texture = ExtResource("7_4e2nk")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=652874286]
 
-[connection signal="pressed" from="VBoxContainer/Play" to="VBoxContainer/Play" method="_on_pressed"]
-[connection signal="pressed" from="VBoxContainer/Play/Play" to="VBoxContainer/Play/Play" method="_on_pressed"]
+[connection signal="pressed" from="VBoxContainer/Play2" to="VBoxContainer/Play2" method="_on_pressed"]

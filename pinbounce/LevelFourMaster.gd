@@ -60,7 +60,7 @@ func _on_win_body_entered(body: Node2D) -> void:
 		$Ball.queue_free()
 		$Box/OpenBox.visible = false
 		$Box/ClosedBox.visible = true
-		get_tree().change_scene_to_file("res://WinScreen.tscn")
+		get_tree().change_scene_to_file("res://WinScreen4.tscn")
 	pass # Replace with function body.
 	
 func reset():
