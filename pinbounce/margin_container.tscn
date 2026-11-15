@@ -1,6 +1,8 @@
 [gd_scene format=3 uid="uid://dx2f7o88rmv5e"]
 
 [ext_resource type="FontFile" uid="uid://b5kkw0b81bcqr" path="res://Pixeled.ttf" id="1_r6qsq"]
+[ext_resource type="Script" uid="uid://csm1801ica5cl" path="res://button.gd" id="2_55npq"]
+[ext_resource type="Script" uid="uid://dyqn1xm3knug3" path="res://quit.gd" id="3_bachm"]
 
 [node name="TitleScreen" type="Control" unique_id=316085665]
 layout_mode = 3
@@ -35,9 +37,19 @@ fit_content = true
 autowrap_mode = 0
 tab_size = 24
 
-[node name="Button" type="Button" parent="PanelContainer/VBoxContainer" unique_id=1938280676]
+[node name="Play" type="Button" parent="PanelContainer/VBoxContainer" unique_id=1938280676]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 theme_override_fonts/font = ExtResource("1_r6qsq")
 text = "Play"
+script = ExtResource("2_55npq")
+
+[node name="Quit" type="Button" parent="PanelContainer/VBoxContainer" unique_id=340847334]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_fonts/font = ExtResource("1_r6qsq")
+text = "Quit
+"
+script = ExtResource("3_bachm")
