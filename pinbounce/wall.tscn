@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://dghw2wwq3h82d"]
 
 [ext_resource type="Texture2D" uid="uid://6fnjhj7yjv2d" path="res://tiles/border_tile.png" id="1_xxgf6"]
+[ext_resource type="Texture2D" uid="uid://r8s0ulv3r1af" path="res://wall.png" id="2_y4f30"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_y4f30"]
 texture = ExtResource("1_xxgf6")
@@ -84,5 +85,6 @@ tile_set = SubResource("TileSet_oh6kn")
 shape = SubResource("RectangleShape2D_450et")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=124170029]
-scale = Vector2(0.156, 0.156)
-texture = ExtResource("1_xxgf6")
+position = Vector2(0, 1)
+scale = Vector2(0.156, 0.5625)
+texture = ExtResource("2_y4f30")
