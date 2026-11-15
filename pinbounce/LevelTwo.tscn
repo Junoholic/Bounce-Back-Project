@@ -20,6 +20,7 @@
 [ext_resource type="Texture2D" uid="uid://b7cixl60ibsoq" path="res://carrot.png" id="18_njs5w"]
 [ext_resource type="Script" uid="uid://cawoecw41q1ni" path="res://area_2d.gd" id="19_u4rwr"]
 [ext_resource type="PackedScene" uid="uid://bwu8q3i6e3dkp" path="res://texture_progress_bar.tscn" id="20_txvxx"]
+[ext_resource type="Texture2D" uid="uid://cj31oou580bqu" path="res://lightbulb - Copy.png" id="21_nqy13"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_272bh"]
 texture = ExtResource("2_nqy13")
@@ -334,6 +335,18 @@ position = Vector2(393.5, 96)
 shape = SubResource("RectangleShape2D_450et")
 
 [node name="TextureProgressBar" parent="." unique_id=1474671433 instance=ExtResource("20_txvxx")]
+
+[node name="health" type="Sprite2D" parent="TextureProgressBar" unique_id=370691139]
+position = Vector2(20, 64)
+texture = ExtResource("21_nqy13")
+
+[node name="health 2" type="Sprite2D" parent="TextureProgressBar" unique_id=1381756731]
+position = Vector2(64, 64)
+texture = ExtResource("21_nqy13")
+
+[node name="health 3" type="Sprite2D" parent="TextureProgressBar" unique_id=41900143]
+position = Vector2(108, 64)
+texture = ExtResource("21_nqy13")
 
 [node name="Wedge" type="StaticBody2D" parent="." unique_id=1139069382]
 position = Vector2(192, 592)
