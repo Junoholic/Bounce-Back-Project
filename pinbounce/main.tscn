@@ -255,6 +255,7 @@ position = Vector2(348, 550)
 
 [node name="PaddleParent" parent="." unique_id=647843333 instance=ExtResource("3_h2yge")]
 position = Vector2(531, 560)
+scale = Vector2(6, 6)
 
 [node name="Box" type="StaticBody2D" parent="." unique_id=1635138446]
 scale = Vector2(7.375, 7.375)
