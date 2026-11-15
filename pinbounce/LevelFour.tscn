@@ -1,6 +1,6 @@
 [gd_scene format=4 uid="uid://w8ubu47p01n4"]
 
-[ext_resource type="Script" uid="uid://d3tq21q2d2aew" path="res://GameMaster.gd" id="1_ycham"]
+[ext_resource type="Script" uid="uid://fn7cceqr7s81" path="res://LevelFourMaster.gd" id="1_ycham"]
 [ext_resource type="Texture2D" uid="uid://cth23ernp8amn" path="res://tiles/inner_tile.png" id="2_1blob"]
 [ext_resource type="Texture2D" uid="uid://6fnjhj7yjv2d" path="res://tiles/border_tile.png" id="3_stry3"]
 [ext_resource type="PackedScene" uid="uid://dghw2wwq3h82d" path="res://wall.tscn" id="4_qysm0"]
