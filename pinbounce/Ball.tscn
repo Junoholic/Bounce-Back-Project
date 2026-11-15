@@ -12,6 +12,9 @@ radius = 30.769234
 [node name="Ball" type="RigidBody2D" unique_id=895890468]
 scale = Vector2(0.325, 0.325)
 physics_material_override = SubResource("PhysicsMaterial_5vw27")
+continuous_cd = 1
+contact_monitor = true
+max_contacts_reported = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1865369357]
 shape = SubResource("CircleShape2D_450et")
