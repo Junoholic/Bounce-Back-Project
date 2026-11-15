@@ -9,6 +9,7 @@ var Catch = preload("res://catch.mp3")
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	$ClosedBox2.visible = false
 	if LivesScript.lives < 3:
 		$AudioStreamPlayer.stream = Death
 		$AudioStreamPlayer.play()
@@ -58,7 +59,8 @@ func _on_win_body_entered(body: Node2D) -> void:
 		$AudioStreamPlayer.play()
 		$Ball.queue_free()
 		$Box/OpenBox.visible = false
-		$Box/ClosedBox.visible = true
+		$Box.visible = false
+		$ClosedBox2.visible = true
 		await get_tree().create_timer(1).timeout
 		get_tree().change_scene_to_file("res://WinScreen2-3.tscn")
 	pass # Replace with function body.

@@ -326,6 +326,16 @@ script = ExtResource("11_yggun")
 position = Vector2(571, 550)
 scale = Vector2(6, 6)
 
+[node name="ClosedBox2" type="Sprite2D" parent="." unique_id=2147478120]
+position = Vector2(127.999985, 527.99994)
+scale = Vector2(1.0000001, 1.0000001)
+texture = ExtResource("13_153cc")
+
+[node name="Handle2" type="Sprite2D" parent="ClosedBox2" unique_id=1277244810]
+position = Vector2(4.012512, 17.750061)
+scale = Vector2(1.0324999, 1.0324999)
+texture = ExtResource("15_1yqkr")
+
 [node name="Box" type="StaticBody2D" parent="." unique_id=1635138446]
 scale = Vector2(7.375, 7.375)
 
