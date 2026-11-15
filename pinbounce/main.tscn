@@ -14,6 +14,8 @@
 [ext_resource type="PackedScene" uid="uid://bxkf3tb773ucd" path="res://trampoline.tscn" id="12_dg77c"]
 [ext_resource type="Texture2D" uid="uid://d0jowxxc5qxcv" path="res://box_closed.png" id="13_ycdy4"]
 [ext_resource type="Texture2D" uid="uid://dcd77i0dnkmho" path="res://rotator.png" id="14_w48qg"]
+[ext_resource type="Script" uid="uid://bhrt0jjk4n56u" path="res://animatable_body_2d.gd" id="15_vivmo"]
+[ext_resource type="Texture2D" uid="uid://53gqob5epvmu" path="res://icon.svg" id="16_2cqfq"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_272bh"]
 texture = ExtResource("1_1bvp3")
@@ -166,6 +168,9 @@ font = ExtResource("1_h2yge")
 shadow_color = Color(0, 0, 0, 0.7882353)
 shadow_offset = Vector2(2, 2)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_450et"]
+size = Vector2(15.864407, 1.2203455)
+
 [node name="Main" type="Node" unique_id=397367065]
 script = ExtResource("9_kek77")
 
@@ -243,7 +248,7 @@ horizontal_alignment = 1
 position = Vector2(576, 350)
 
 [node name="Ball" parent="." unique_id=895890468 instance=ExtResource("2_0xm2m")]
-position = Vector2(593, 149)
+position = Vector2(132, 505.00003)
 
 [node name="Trampoline" parent="." unique_id=607760481 instance=ExtResource("12_dg77c")]
 position = Vector2(348, 550)
@@ -268,3 +273,15 @@ texture = ExtResource("13_ycdy4")
 position = Vector2(17.9, 74)
 scale = Vector2(0.14, 0.14)
 texture = ExtResource("14_w48qg")
+
+[node name="AnimatableBody2D" type="AnimatableBody2D" parent="Box" unique_id=1030120301]
+position = Vector2(18.440678, 77.55932)
+script = ExtResource("15_vivmo")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Box/AnimatableBody2D" unique_id=1510499309]
+position = Vector2(-1.0847458, 1.6271186)
+shape = SubResource("RectangleShape2D_450et")
+
+[node name="Sprite2D" type="Sprite2D" parent="Box/AnimatableBody2D" unique_id=102498393]
+scale = Vector2(0.08, 0.08)
+texture = ExtResource("16_2cqfq")
