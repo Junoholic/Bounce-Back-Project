@@ -8,6 +8,9 @@ var Death = preload("res://u_b32baquv5u-8-bit-explosion-3-340456.mp3")
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	if LivesScript.lives < 3:
+		$AudioStreamPlayer.stream = Death
+		$AudioStreamPlayer.play()
 	pass # Replace with function body.
 
 
@@ -54,7 +57,5 @@ func _on_win_body_entered(body: Node2D) -> void:
 	pass # Replace with function body.
 	
 func reset():
-	$AudioStreamPlayer.stream = Death
-	$AudioStreamPlayer.play()
 	LivesScript.lives -= 1
 	get_tree().reload_current_scene()
