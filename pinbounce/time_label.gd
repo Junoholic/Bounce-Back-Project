@@ -12,5 +12,5 @@ func _process(delta: float) -> void:
 	text = str(32 - (Time.get_ticks_msec() - resetTime) / 1000)
 	
 	if 32 - (Time.get_ticks_msec() - resetTime) / 1000 <= 0:
-		get_tree().reload_current_scene()
+		$"..".reset()
 	pass

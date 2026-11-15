@@ -12,7 +12,7 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	if Input.is_action_pressed("reset"):
-		get_tree().reload_current_scene()
+		reset()
 	
 	if carrots == 1:
 		turning = true
@@ -37,8 +37,7 @@ func _process(delta: float) -> void:
 
 
 func _on_area_2d_body_entered(body: Node2D) -> void:
-	LivesScript.lives -= 1
-	get_tree().reload_current_scene()
+	reset()
 	pass # Replace with function body.
 
 
@@ -46,3 +45,7 @@ func _on_win_body_entered(body: Node2D) -> void:
 	if carrots == 1:
 		get_tree().change_scene_to_file("res://WinScreen.tscn")
 	pass # Replace with function body.
+	
+func reset():
+	LivesScript.lives -= 1
+	get_tree().reload_current_scene()
