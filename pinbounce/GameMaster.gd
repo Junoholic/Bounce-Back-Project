@@ -4,7 +4,7 @@ var carrots = 0
 var t = 1
 var timer = 0
 var turning = false
-var Death = preload("res://u_b32baquv5u-8-bit-explosion-3-340456.mp3")
+var Death = preload("res://My Project.mp3")
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:

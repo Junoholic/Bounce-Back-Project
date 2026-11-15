@@ -361,5 +361,7 @@ position = Vector2(1091, 592)
 position = Vector2(-3, 0)
 polygon = PackedVector2Array(0, 0, 0, -80, -79, 0)
 
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=496434132]
+
 [connection signal="body_entered" from="Box/Win" to="." method="_on_win_body_entered"]
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
