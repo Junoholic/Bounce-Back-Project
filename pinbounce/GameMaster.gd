@@ -13,9 +13,9 @@ func _process(delta: float) -> void:
 		get_tree().reload_current_scene()
 	
 	if carrots == 1:
-		$"../OpenBox".visible = true
-		$"../ClosedBox".visible = false
-		$"../Lid".disabled = false
+		$Box/OpenBox.visible = true
+		$Box/ClosedBox.visible = false
+		$Box/Lid.disabled = false
 	pass
 
 
