@@ -308,7 +308,7 @@ offset_right = 1047.0
 offset_bottom = 251.0
 scale = Vector2(1.04, 1.04)
 theme_override_fonts/font = ExtResource("1_h2yge")
-text = "0
+text = "0/1
 
 "
 label_settings = SubResource("LabelSettings_kek77")
