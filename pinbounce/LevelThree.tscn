@@ -187,6 +187,9 @@ shadow_offset = Vector2(2, 2)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_450et"]
 size = Vector2(893, 2)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_saowl"]
+size = Vector2(79.7634, 20)
+
 [node name="Level3" type="Node" unique_id=397367065]
 script = ExtResource("1_yggun")
 
@@ -260,8 +263,10 @@ position = Vector2(427, 238)
 rotation = 2.0315633
 scale = Vector2(1.06, 1.06)
 
-[node name="Wall11" parent="Wall10" unique_id=1833973959 instance=ExtResource("4_n7hh0")]
-position = Vector2(72, 0)
+[node name="Wall11" parent="." unique_id=1217985143 instance=ExtResource("4_n7hh0")]
+position = Vector2(198.99998, 442.00003)
+rotation = 2.0315633
+scale = Vector2(1.06, 1.06)
 
 [node name="Ball" parent="." unique_id=895890468 instance=ExtResource("5_mbpk8")]
 position = Vector2(121.585, 505)
@@ -301,7 +306,7 @@ label_settings = SubResource("LabelSettings_5vw27")
 horizontal_alignment = 1
 
 [node name="Carrot" parent="." unique_id=2055753811 instance=ExtResource("9_ise7h")]
-position = Vector2(279.00003, 411)
+position = Vector2(278, 368.00003)
 
 [node name="Carrot2" parent="." unique_id=1137378693 instance=ExtResource("9_ise7h")]
 position = Vector2(585, 388)
@@ -426,6 +431,14 @@ polygon = PackedVector2Array(0, 0, 0, -80, -79, 0)
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1989957138]
 script = ExtResource("23_vgykq")
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="." unique_id=693904331]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2" unique_id=1551378976]
+position = Vector2(237, 482.99997)
+rotation = 0.13962634
+scale = Vector2(0.99999994, 0.99999994)
+shape = SubResource("RectangleShape2D_saowl")
 
 [connection signal="body_entered" from="Box/Win" to="." method="_on_win_body_entered"]
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
