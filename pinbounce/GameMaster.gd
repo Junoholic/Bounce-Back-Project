@@ -5,6 +5,7 @@ var t = 1
 var timer = 0
 var turning = false
 var Death = preload("res://My Project.mp3")
+var Catch = preload("res://catch.mp3")
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -53,9 +54,11 @@ func _on_area_2d_body_entered(body: Node2D) -> void:
 
 func _on_win_body_entered(body: Node2D) -> void:
 	if carrots == 1:
-		$AudioStreamPlayer.stream = Death
+		$AudioStreamPlayer.stream = Catch
 		$AudioStreamPlayer.play()
-		$Ball.position = Vector2(-1000, -1000)
+		$Ball.queue_free()
+		$Box/OpenBox.visible = false
+		$Box/ClosedBox.visible = true
 		await get_tree().create_timer(1).timeout
 		get_tree().change_scene_to_file("res://WinScreen.tscn")
 	pass # Replace with function body.
