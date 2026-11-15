@@ -1,4 +1,4 @@
-extends Label
+extends Label#Node.reload_current_scene()
 @onready var main: Node = $".."
 var resetTime = Time.get_ticks_msec()
 
@@ -9,5 +9,8 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	text = str(30 - (Time.get_ticks_msec() - resetTime) / 1000)
+	text = str(32 - (Time.get_ticks_msec() - resetTime) / 1000)
+	
+	if 32 - (Time.get_ticks_msec() - resetTime) / 1000 <= 0:
+		get_tree().reload_current_scene()
 	pass
