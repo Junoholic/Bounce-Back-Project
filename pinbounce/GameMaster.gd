@@ -40,3 +40,9 @@ func _on_area_2d_body_entered(body: Node2D) -> void:
 	LivesScript.lives -= 1
 	get_tree().reload_current_scene()
 	pass # Replace with function body.
+
+
+func _on_win_body_entered(body: Node2D) -> void:
+	if carrots == 1:
+		get_tree().change_scene_to_file("res://WinScreen.tscn")
+	pass # Replace with function body.

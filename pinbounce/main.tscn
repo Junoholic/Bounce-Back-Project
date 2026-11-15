@@ -171,6 +171,9 @@ shadow_offset = Vector2(2, 2)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_25y7d"]
 size = Vector2(17.59322, 3.8983078)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wylpk"]
+size = Vector2(13.42373, 6.644066)
+
 [sub_resource type="LabelSettings" id="LabelSettings_kek77"]
 shadow_color = Color(0, 0, 0, 0.7882353)
 shadow_offset = Vector2(2, 2)
@@ -285,8 +288,12 @@ position = Vector2(16.694916, 64.86441)
 shape = SubResource("RectangleShape2D_25y7d")
 
 [node name="Win" type="Area2D" parent="Box" unique_id=1904024586]
+collision_layer = 2
+collision_mask = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Box/Win" unique_id=1313570112]
+position = Vector2(16.61017, 75.18644)
+shape = SubResource("RectangleShape2D_wylpk")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1318047888]
 
@@ -326,4 +333,5 @@ shape = SubResource("RectangleShape2D_450et")
 
 [node name="TextureProgressBar" parent="." unique_id=1474671433 instance=ExtResource("20_82xsv")]
 
+[connection signal="body_entered" from="Box/Win" to="." method="_on_win_body_entered"]
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
