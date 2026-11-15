@@ -1,6 +1,6 @@
 [gd_scene format=4 uid="uid://cwuojc8olydse"]
 
-[ext_resource type="Script" uid="uid://d3tq21q2d2aew" path="res://GameMaster.gd" id="1_yggun"]
+[ext_resource type="Script" uid="uid://dqktm15uov1ys" path="res://GameMaster3.gd" id="1_yggun"]
 [ext_resource type="Texture2D" uid="uid://cth23ernp8amn" path="res://tiles/inner_tile.png" id="2_yyimb"]
 [ext_resource type="Texture2D" uid="uid://6fnjhj7yjv2d" path="res://tiles/border_tile.png" id="3_o2sv6"]
 [ext_resource type="PackedScene" uid="uid://dghw2wwq3h82d" path="res://wall.tscn" id="4_n7hh0"]
@@ -10,7 +10,7 @@
 [ext_resource type="Script" uid="uid://bogxr70wmuv4r" path="res://time_label.gd" id="8_jfwik"]
 [ext_resource type="PackedScene" uid="uid://d3gw3w3futfgo" path="res://Carrot.tscn" id="9_ise7h"]
 [ext_resource type="PackedScene" uid="uid://bxkf3tb773ucd" path="res://trampoline.tscn" id="10_61v5q"]
-[ext_resource type="Script" uid="uid://duu0kujmur7rj" path="res://trampoline2.gd" id="11_qtcwy"]
+[ext_resource type="Script" uid="uid://keo8upei0uav" path="res://trampoline3.gd" id="11_yggun"]
 [ext_resource type="PackedScene" uid="uid://bnpdwr57njcd" path="res://paddle.tscn" id="12_gbuny"]
 [ext_resource type="Texture2D" uid="uid://d0jowxxc5qxcv" path="res://box_closed.png" id="13_153cc"]
 [ext_resource type="Texture2D" uid="uid://d270lusqo6t3a" path="res://box_open.png" id="14_byqoc"]
@@ -204,6 +204,26 @@ scale = Vector2(57.6, 3)
 position = Vector2(576, 626)
 scale = Vector2(57.6, 3)
 
+[node name="Wall6" parent="." unique_id=1820506169 instance=ExtResource("4_n7hh0")]
+position = Vector2(281, 483)
+rotation = 0.08726646
+scale = Vector2(5.34, 1.06)
+
+[node name="Wall9" parent="." unique_id=1243361459 instance=ExtResource("4_n7hh0")]
+position = Vector2(617, 428)
+rotation = -0.5235988
+scale = Vector2(5.34, 1.06)
+
+[node name="Wall7" parent="." unique_id=903428918 instance=ExtResource("4_n7hh0")]
+position = Vector2(67.35, 329.545)
+rotation = 1.2217305
+scale = Vector2(5.34, 1.06)
+
+[node name="Wall8" parent="." unique_id=2128691387 instance=ExtResource("4_n7hh0")]
+position = Vector2(346.00003, 212)
+rotation = -0.08726646
+scale = Vector2(10.715, 1.06)
+
 [node name="Wall3" parent="." unique_id=1673131253 instance=ExtResource("4_n7hh0")]
 position = Vector2(30, 328)
 scale = Vector2(3, 26.8)
@@ -252,19 +272,35 @@ horizontal_alignment = 1
 [node name="Carrot" parent="." unique_id=2055753811 instance=ExtResource("9_ise7h")]
 position = Vector2(367, 295)
 
+[node name="Carrot2" parent="." unique_id=1137378693 instance=ExtResource("9_ise7h")]
+position = Vector2(512, 366.00003)
+
+[node name="Carrot3" parent="." unique_id=2042530843 instance=ExtResource("9_ise7h")]
+position = Vector2(414, 133)
+
+[node name="Carrot4" parent="." unique_id=291470804 instance=ExtResource("9_ise7h")]
+position = Vector2(321, 144)
+
+[node name="Carrot5" parent="." unique_id=1254290989 instance=ExtResource("9_ise7h")]
+position = Vector2(1048, 133)
+
+[node name="Carrot6" parent="." unique_id=905724073 instance=ExtResource("9_ise7h")]
+position = Vector2(1048, 133)
+
+[node name="Carrot7" parent="." unique_id=700026962 instance=ExtResource("9_ise7h")]
+position = Vector2(817, 132)
+
 [node name="Trampoline" parent="." unique_id=607760481 instance=ExtResource("10_61v5q")]
-position = Vector2(632, 332)
-rotation = -1.5613856
+position = Vector2(679, 219)
 physics_material_override = SubResource("PhysicsMaterial_nqy13")
-script = ExtResource("11_qtcwy")
+script = ExtResource("11_yggun")
 
 [node name="PaddleParent" parent="." unique_id=647843333 instance=ExtResource("12_gbuny")]
-position = Vector2(447, 411)
+position = Vector2(451, 467.00003)
 scale = Vector2(6, 6)
 
-[node name="PaddleParent2" parent="." unique_id=1010672604 instance=ExtResource("12_gbuny")]
-position = Vector2(762, 283)
-rotation = -1.5685769
+[node name="PaddleParent2" parent="." unique_id=734251957 instance=ExtResource("12_gbuny")]
+position = Vector2(315.00003, 537)
 scale = Vector2(6, 6)
 
 [node name="Box" type="StaticBody2D" parent="." unique_id=1635138446]

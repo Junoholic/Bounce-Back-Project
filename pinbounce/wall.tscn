@@ -82,3 +82,7 @@ tile_set = SubResource("TileSet_oh6kn")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1816614415]
 shape = SubResource("RectangleShape2D_450et")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=124170029]
+scale = Vector2(0.156, 0.156)
+texture = ExtResource("1_xxgf6")
