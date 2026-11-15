@@ -14,6 +14,6 @@ func _process(delta: float) -> void:
 		pos += speed * delta
 	if Input.is_action_pressed("move_left") and not Input.is_action_pressed("move_right"):
 		pos -= speed * delta
-	pos = max(min(pos, screen_size.x - 120), 252)
+	pos = max(min(pos, screen_size.x - 120), 310)
 	position.x = pos
 	pass
