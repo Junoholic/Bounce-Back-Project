@@ -325,6 +325,7 @@ expand_mode = 1
 
 [node name="Area2D" type="Area2D" parent="." unique_id=867287631]
 position = Vector2(246, 494)
+collision_mask = 4
 script = ExtResource("21_getpj")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=736104880]
@@ -332,6 +333,19 @@ position = Vector2(393.5, 96)
 shape = SubResource("RectangleShape2D_450et")
 
 [node name="TextureProgressBar" parent="." unique_id=1474671433 instance=ExtResource("20_82xsv")]
+
+[node name="Wedge" type="StaticBody2D" parent="." unique_id=1139069382]
+position = Vector2(192, 592)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Wedge" unique_id=764896932]
+polygon = PackedVector2Array(0, 0, 0, -80, 79, 0)
+
+[node name="Wedge2" type="StaticBody2D" parent="." unique_id=879348579]
+position = Vector2(1091, 592)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Wedge2" unique_id=724157655]
+position = Vector2(-3, 0)
+polygon = PackedVector2Array(0, 0, 0, -80, -79, 0)
 
 [connection signal="body_entered" from="Box/Win" to="." method="_on_win_body_entered"]
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
