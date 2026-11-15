@@ -146,7 +146,7 @@ label_settings = SubResource("LabelSettings_y2cqg")
 
 [node name="TitlePuff" type="Sprite2D" parent="." unique_id=2034683810]
 position = Vector2(588, 192.99994)
-scale = Vector2(5.0400014, 5.0400014)
+scale = Vector2(3.9200027, 3.9200027)
 texture = ExtResource("6_ifl63")
 
 [connection signal="pressed" from="PanelContainer/VBoxContainer/Play" to="PanelContainer/VBoxContainer/Play" method="_on_pressed"]
