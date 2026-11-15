@@ -53,6 +53,10 @@ func _on_area_2d_body_entered(body: Node2D) -> void:
 
 func _on_win_body_entered(body: Node2D) -> void:
 	if carrots == 1:
+		$AudioStreamPlayer.stream = Death
+		$AudioStreamPlayer.play()
+		$Ball.position = Vector2(-1000, -1000)
+		await get_tree().create_timer(1).timeout
 		get_tree().change_scene_to_file("res://WinScreen.tscn")
 	pass # Replace with function body.
 	
