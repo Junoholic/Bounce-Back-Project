@@ -262,6 +262,11 @@ script = ExtResource("12_dbpel")
 position = Vector2(303, 519)
 scale = Vector2(6, 6)
 
+[node name="PaddleParent2" parent="." unique_id=1010672604 instance=ExtResource("11_epxhw")]
+position = Vector2(515, 476.00003)
+rotation = -1.5685769
+scale = Vector2(6, 6)
+
 [node name="Box" type="StaticBody2D" parent="." unique_id=1635138446]
 scale = Vector2(7.375, 7.375)
 
