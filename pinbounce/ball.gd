@@ -12,6 +12,6 @@ func _process(delta: float) -> void:
 
 func _on_body_entered(body: Node) -> void:
 	if Time.get_ticks_msec() - $"../TimeLabel".resetTime > 2750:
-		$"../AudioStreamPlayer".stream = Bounce
-		$"../AudioStreamPlayer".play()
+		$bounce.stream = Bounce
+		$bounce.play()
 	pass # Replace with function body.

@@ -26,4 +26,7 @@ shape = SubResource("CircleShape2D_450et")
 scale = Vector2(0.06, 0.06)
 texture = ExtResource("1_dy6sc")
 
+[node name="bounce" type="AudioStreamPlayer" parent="." unique_id=1181155573]
+volume_db = -5.0
+
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
