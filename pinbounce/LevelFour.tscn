@@ -199,10 +199,6 @@ scale = Vector2(57.6, 3)
 position = Vector2(576, 626)
 scale = Vector2(57.6, 3)
 
-[node name="Wall3" parent="." unique_id=1673131253 instance=ExtResource("4_qysm0")]
-position = Vector2(30, 328)
-scale = Vector2(3, 26.8)
-
 [node name="Wall4" parent="." unique_id=1770469922 instance=ExtResource("4_qysm0")]
 position = Vector2(1122, 328)
 scale = Vector2(3, 26.8)

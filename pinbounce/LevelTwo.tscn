@@ -200,10 +200,6 @@ scale = Vector2(57.6, 3)
 position = Vector2(576, 626)
 scale = Vector2(57.6, 3)
 
-[node name="Wall3" parent="." unique_id=1673131253 instance=ExtResource("4_12awh")]
-position = Vector2(30, 328)
-scale = Vector2(3, 26.8)
-
 [node name="Wall4" parent="." unique_id=1770469922 instance=ExtResource("4_12awh")]
 position = Vector2(1122, 328)
 scale = Vector2(3, 26.8)
@@ -213,9 +209,9 @@ tile_map_data = PackedByteArray("AAAEAAQABQAEAAQAAAAEAAUABQAEAAUAAAAEAAYABQAEAAY
 tile_set = SubResource("TileSet_r4utc")
 
 [node name="Wall9" parent="." unique_id=504912606 instance=ExtResource("4_12awh")]
-position = Vector2(233.00002, 541.99994)
+position = Vector2(232.00003, 534)
 rotation = -1.5717794
-scale = Vector2(4.9116898, 2.801367)
+scale = Vector2(2.5, 2.5)
 
 [node name="Ball" parent="." unique_id=895890468 instance=ExtResource("9_ywo3r")]
 position = Vector2(121.585, 505)
