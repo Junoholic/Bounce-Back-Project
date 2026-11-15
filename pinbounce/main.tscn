@@ -178,6 +178,7 @@ position = Vector2(569, 76)
 [node name="Paddle" parent="." unique_id=803579783 instance=ExtResource("3_h2yge")]
 position = Vector2(589, 515.70496)
 scale = Vector2(8.32, 8.32)
+script = null
 
 [node name="Wall" parent="." unique_id=810970931 instance=ExtResource("7_272bh")]
 position = Vector2(576, 30)
