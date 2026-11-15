@@ -114,7 +114,7 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="TitleScreen" type="Control" unique_id=316085665]
+[node name="TitleScreen2" type="Control" unique_id=316085665]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0

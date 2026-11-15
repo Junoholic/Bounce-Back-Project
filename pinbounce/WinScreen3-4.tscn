@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://6fnjhj7yjv2d" path="res://tiles/border_tile.png" id="2_3sbtw"]
 [ext_resource type="Texture2D" uid="uid://dn8hgpf5e6wq3" path="res://victory_anim.png" id="3_diw3o"]
 [ext_resource type="FontFile" uid="uid://b5kkw0b81bcqr" path="res://Pixeled.ttf" id="4_xkgca"]
-[ext_resource type="Script" uid="uid://b2rvl1qs400er" path="res://NextLevel2.gd" id="5_1hr2e"]
+[ext_resource type="Script" uid="uid://dga65m5881fvb" path="res://NextLevel3.gd" id="5_rh3vv"]
 [ext_resource type="Script" uid="uid://1ri3neoasec2" path="res://MainMenuVictory.gd" id="6_u00ki"]
 [ext_resource type="Texture2D" uid="uid://dtsc6wicdffhp" path="res://victory_title.png" id="7_d5l64"]
 
@@ -152,7 +152,7 @@ size_flags_vertical = 4
 theme_override_fonts/font = ExtResource("4_xkgca")
 text = "Next Level
 "
-script = ExtResource("5_1hr2e")
+script = ExtResource("5_rh3vv")
 
 [node name="Play" type="Button" parent="VBoxContainer/Play" unique_id=831868883]
 layout_mode = 0
