@@ -4,6 +4,7 @@ var timer = 0
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	$"../Lid".disabled = true
 	$"../OpenBox".visible = false
 	launch()
 	pass # Replace with function body.
@@ -24,6 +25,7 @@ func _process(delta: float) -> void:
 				launching = false
 				$"../OpenBox".visible = false
 				$"../ClosedBox".visible = true
+				$"../Lid".disabled = false
 				queue_free()
 		elif 0.5 < timer and timer < 1.5:
 			$"../Handle".rotation = (timer - 0.5) / 2 * 3.1415926

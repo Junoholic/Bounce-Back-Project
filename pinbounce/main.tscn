@@ -168,6 +168,9 @@ font = ExtResource("1_h2yge")
 shadow_color = Color(0, 0, 0, 0.7882353)
 shadow_offset = Vector2(2, 2)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_25y7d"]
+size = Vector2(17.59322, 3.8983078)
+
 [node name="Main" type="Node" unique_id=397367065]
 script = ExtResource("9_kek77")
 
@@ -282,3 +285,12 @@ script = ExtResource("15_vivmo")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Box/AnimatableBody2D" unique_id=482284794]
 polygon = PackedVector2Array(4.6101704, 1.0847473, -9.220339, -1.0847397, -9.491525, 2.1694946, 6.101696, 2.3050919, 6.779661, -3.6610107)
+
+[node name="Lid" type="CollisionShape2D" parent="Box" unique_id=1654172030]
+position = Vector2(16.694916, 64.86441)
+shape = SubResource("RectangleShape2D_25y7d")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1318047888]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D" unique_id=1022186117]
+polygon = PackedVector2Array(192, 592, 256, 592, 192, 544)
