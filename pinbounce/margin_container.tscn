@@ -5,6 +5,7 @@
 [ext_resource type="Script" uid="uid://csm1801ica5cl" path="res://button.gd" id="2_55npq"]
 [ext_resource type="Script" uid="uid://dyqn1xm3knug3" path="res://quit.gd" id="3_bachm"]
 [ext_resource type="Texture2D" uid="uid://c3dkx1rhxhr5k" path="res://puff.png" id="4_hhuvf"]
+[ext_resource type="Texture2D" uid="uid://cdf68sekxbih2" path="res://title_puff.png" id="6_ifl63"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ifl63"]
 texture = ExtResource("1_6jxja")
@@ -103,17 +104,6 @@ layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 
-[node name="RichTextLabel" type="RichTextLabel" parent="PanelContainer/VBoxContainer" unique_id=1419899739]
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 4
-theme_override_fonts/normal_font = ExtResource("1_r6qsq")
-text = "Puff
-"
-fit_content = true
-autowrap_mode = 0
-tab_size = 24
-
 [node name="Play" type="Button" parent="PanelContainer/VBoxContainer" unique_id=1938280676]
 layout_mode = 2
 size_flags_horizontal = 4
@@ -153,6 +143,11 @@ Good Luck!
 Collect The Carrots and 
 Bounce Back!"
 label_settings = SubResource("LabelSettings_y2cqg")
+
+[node name="TitlePuff" type="Sprite2D" parent="." unique_id=2034683810]
+position = Vector2(588, 192.99994)
+scale = Vector2(5.0400014, 5.0400014)
+texture = ExtResource("6_ifl63")
 
 [connection signal="pressed" from="PanelContainer/VBoxContainer/Play" to="PanelContainer/VBoxContainer/Play" method="_on_pressed"]
 [connection signal="pressed" from="PanelContainer/VBoxContainer/Quit" to="PanelContainer/VBoxContainer/Quit" method="_on_pressed"]
