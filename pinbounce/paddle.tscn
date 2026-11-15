@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://8xmfyuuyl5k5" path="res://paddle.png" id="2_tbytw"]
 
 [sub_resource type="ConvexPolygonShape2D" id="ConvexPolygonShape2D_4c57u"]
-points = PackedVector2Array(16.393442, -3.2786884, -4.9180326, -4.9180326, -13.88, -5.57, -16.79, -0.03, -14.055, 7.31, 6.557377, 6.557377, 16.393442, 3.2786884)
+points = PackedVector2Array(19.986107, -4.8902473, -4.9180326, -4.9180326, -13.88, -5.57, -16.79, -0.03, -14.055, 7.31, 6.557377, 6.557377, 16.393442, 3.2786884)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_25y7d"]
 size = Vector2(16, 4)
