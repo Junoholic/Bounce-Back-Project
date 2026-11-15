@@ -9,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://bi27lpi0721mu" path="res://trampoline.png" id="7_ow4vg"]
 [ext_resource type="Texture2D" uid="uid://8xmfyuuyl5k5" path="res://paddle.png" id="8_8rb3x"]
 [ext_resource type="Texture2D" uid="uid://b7cixl60ibsoq" path="res://carrot.png" id="9_8rb3x"]
+[ext_resource type="Script" uid="uid://dhxut5tnnya2d" path="res://1.gd" id="10_w50pv"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ifl63"]
 texture = ExtResource("1_6jxja")
@@ -214,6 +215,9 @@ theme_override_fonts/font = ExtResource("1_r6qsq")
 text = "Quit
 "
 script = ExtResource("3_bachm")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1540231469]
+script = ExtResource("10_w50pv")
 
 [connection signal="pressed" from="VBoxContainer/Play" to="VBoxContainer/Play" method="_on_pressed"]
 [connection signal="pressed" from="VBoxContainer/Quit" to="VBoxContainer/Quit" method="_on_pressed"]
