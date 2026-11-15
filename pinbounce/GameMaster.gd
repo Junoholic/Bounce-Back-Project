@@ -18,7 +18,6 @@ func _process(delta: float) -> void:
 		turning = true
 	pass
 	
-<<<<<<< Updated upstream
 	if turning:
 		$Box/Handle.rotation = (t) / 2 * 3.1415926
 		if t == 0:
@@ -30,11 +29,9 @@ func _process(delta: float) -> void:
 	
 	if t < 0:
 		t = 0
-=======
 	if LivesScript.lives == 0:
 		get_tree().change_scene_to_file("res://YouLose.tscn")
 		LivesScript.lives = 3
->>>>>>> Stashed changes
 
 
 func _on_area_2d_body_entered(body: Node2D) -> void:

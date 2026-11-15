@@ -285,6 +285,10 @@ polygon = PackedVector2Array(-0.40678024, 0.40678406, -9.220339, -1.0847397, -9.
 position = Vector2(16.694916, 64.86441)
 shape = SubResource("RectangleShape2D_25y7d")
 
+[node name="Win" type="Area2D" parent="Box" unique_id=1904024586]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Box/Win" unique_id=1313570112]
+
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1318047888]
 
 [node name="CarrotHolder" type="Sprite2D" parent="." unique_id=1021622552]
