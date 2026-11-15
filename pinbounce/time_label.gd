@@ -1,6 +1,6 @@
 extends Label
 @onready var main: Node = $".."
-
+var resetTime = Time.get_ticks_msec()
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -9,5 +9,5 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	text = str(Time.get_ticks_msec() / 1000)
+	text = str(30 - (Time.get_ticks_msec() - resetTime) / 1000)
 	pass

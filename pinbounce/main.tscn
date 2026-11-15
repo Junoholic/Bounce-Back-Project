@@ -251,7 +251,7 @@ position = Vector2(576, 350)
 position = Vector2(121.585, 505)
 
 [node name="Trampoline" parent="." unique_id=607760481 instance=ExtResource("12_dg77c")]
-position = Vector2(348, 550)
+position = Vector2(251, 563)
 
 [node name="PaddleParent" parent="." unique_id=647843333 instance=ExtResource("3_h2yge")]
 position = Vector2(531, 560)
@@ -289,8 +289,3 @@ polygon = PackedVector2Array(4.6101704, 1.0847473, -9.220339, -1.0847397, -9.491
 [node name="Lid" type="CollisionShape2D" parent="Box" unique_id=1654172030]
 position = Vector2(16.694916, 64.86441)
 shape = SubResource("RectangleShape2D_25y7d")
-
-[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1318047888]
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D" unique_id=1022186117]
-polygon = PackedVector2Array(192, 592, 256, 592, 192, 544)
