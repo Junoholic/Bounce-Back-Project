@@ -2,6 +2,7 @@ extends Node
 
 var carrots = 0
 var t = 1
+var timer = 0
 var turning = false
 
 # Called when the node enters the scene tree for the first time.
@@ -11,7 +12,8 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	if Input.is_action_pressed("reset"):
+	timer += delta
+	if Input.is_action_pressed("reset") and timer > 2:
 		reset()
 	
 	if carrots == 1:
@@ -29,12 +31,16 @@ func _process(delta: float) -> void:
 	
 	if t < 0:
 		t = 0
-
+		
 	if LivesScript.lives == 0:
+		change()
+		
+
+func change():
+	if is_inside_tree():
+		get_tree().paused = false
 		get_tree().change_scene_to_file("res://YouLose.tscn")
-		LivesScript.lives = 3
-
-
+	
 
 func _on_area_2d_body_entered(body: Node2D) -> void:
 	reset()
