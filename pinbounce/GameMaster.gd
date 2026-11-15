@@ -11,6 +11,11 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	if Input.is_action_pressed("reset"):
 		get_tree().reload_current_scene()
+	
+	if carrots == 1:
+		$"../OpenBox".visible = true
+		$"../ClosedBox".visible = false
+		$"../Lid".disabled = false
 	pass
 
 
