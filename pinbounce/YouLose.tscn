@@ -4,6 +4,7 @@
 [ext_resource type="FontFile" uid="uid://b5kkw0b81bcqr" path="res://Pixeled.ttf" id="2_bb6ps"]
 [ext_resource type="Script" uid="uid://yjqa38l3w3sj" path="res://play_2.gd" id="3_qvpel"]
 [ext_resource type="Texture2D" uid="uid://c3dkx1rhxhr5k" path="res://puff.png" id="4_rmypk"]
+[ext_resource type="Texture2D" uid="uid://436u880ok5ln" path="res://end_title.png" id="5_bb6ps"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ifl63"]
 texture = ExtResource("1_qvpel")
@@ -75,7 +76,7 @@ texture = ExtResource("1_qvpel")
 [sub_resource type="TileSet" id="TileSet_y2cqg"]
 sources/0 = SubResource("TileSetAtlasSource_ifl63")
 
-[node name="TitleScreen" type="Control" unique_id=316085665]
+[node name="TitleScreen2" type="Control" unique_id=316085665]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -101,17 +102,6 @@ layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 
-[node name="RichTextLabel" type="RichTextLabel" parent="PanelContainer/VBoxContainer" unique_id=1419899739]
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 4
-theme_override_fonts/normal_font = ExtResource("2_bb6ps")
-text = "You Lose!
-"
-fit_content = true
-autowrap_mode = 0
-tab_size = 24
-
 [node name="Play2" type="Button" parent="PanelContainer/VBoxContainer" unique_id=429357104]
 layout_mode = 2
 size_flags_horizontal = 4
@@ -124,5 +114,10 @@ script = ExtResource("3_qvpel")
 position = Vector2(961.9999, 453)
 scale = Vector2(3.015625, 3.015625)
 texture = ExtResource("4_rmypk")
+
+[node name="EndTitle" type="Sprite2D" parent="." unique_id=1700289720]
+position = Vector2(569, 203.00002)
+scale = Vector2(5.199999, 5.199999)
+texture = ExtResource("5_bb6ps")
 
 [connection signal="pressed" from="PanelContainer/VBoxContainer/Play2" to="PanelContainer/VBoxContainer/Play2" method="_on_pressed"]
