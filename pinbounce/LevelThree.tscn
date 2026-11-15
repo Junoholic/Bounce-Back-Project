@@ -205,12 +205,12 @@ position = Vector2(576, 626)
 scale = Vector2(57.6, 3)
 
 [node name="Wall6" parent="." unique_id=1820506169 instance=ExtResource("4_n7hh0")]
-position = Vector2(310, 487.99997)
-rotation = 0.08726646
-scale = Vector2(12.475, 1.06)
+position = Vector2(366, 507.99997)
+rotation = 0.17453292
+scale = Vector2(18.53, 1.06)
 
 [node name="Wall9" parent="." unique_id=1243361459 instance=ExtResource("4_n7hh0")]
-position = Vector2(651.00006, 428)
+position = Vector2(726, 513.99994)
 rotation = -0.5235988
 scale = Vector2(5.34, 1.06)
 
@@ -278,7 +278,7 @@ horizontal_alignment = 1
 position = Vector2(279.00003, 411)
 
 [node name="Carrot2" parent="." unique_id=1137378693 instance=ExtResource("9_ise7h")]
-position = Vector2(512, 366.00003)
+position = Vector2(585, 388)
 
 [node name="Carrot3" parent="." unique_id=2042530843 instance=ExtResource("9_ise7h")]
 position = Vector2(414, 133)
@@ -286,16 +286,13 @@ position = Vector2(414, 133)
 [node name="Carrot4" parent="." unique_id=291470804 instance=ExtResource("9_ise7h")]
 position = Vector2(321, 144)
 
-[node name="Carrot5" parent="." unique_id=1254290989 instance=ExtResource("9_ise7h")]
-position = Vector2(1048, 133)
-
 [node name="Trampoline" parent="." unique_id=607760481 instance=ExtResource("10_61v5q")]
 position = Vector2(679, 219)
 physics_material_override = SubResource("PhysicsMaterial_nqy13")
 script = ExtResource("11_yggun")
 
 [node name="PaddleParent" parent="." unique_id=647843333 instance=ExtResource("12_gbuny")]
-position = Vector2(498, 520)
+position = Vector2(571, 550)
 scale = Vector2(6, 6)
 
 [node name="Box" type="StaticBody2D" parent="." unique_id=1635138446]
