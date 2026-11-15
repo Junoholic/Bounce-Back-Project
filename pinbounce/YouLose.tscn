@@ -1,5 +1,6 @@
 [gd_scene format=4 uid="uid://dhrp6oxvdqckr"]
 
+[ext_resource type="Script" uid="uid://6cli8cnhm60f" path="res://you_lose.gd" id="1_gh6eg"]
 [ext_resource type="Texture2D" uid="uid://6fnjhj7yjv2d" path="res://tiles/border_tile.png" id="1_qvpel"]
 [ext_resource type="FontFile" uid="uid://b5kkw0b81bcqr" path="res://Pixeled.ttf" id="2_bb6ps"]
 [ext_resource type="Script" uid="uid://yjqa38l3w3sj" path="res://play_2.gd" id="3_qvpel"]
@@ -83,6 +84,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_gh6eg")
 metadata/_edit_use_anchors_ = true
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=97565994]
@@ -119,5 +121,7 @@ texture = ExtResource("4_rmypk")
 position = Vector2(569, 203.00002)
 scale = Vector2(5.199999, 5.199999)
 texture = ExtResource("5_bb6ps")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1336182863]
 
 [connection signal="pressed" from="PanelContainer/VBoxContainer/Play2" to="PanelContainer/VBoxContainer/Play2" method="_on_pressed"]
