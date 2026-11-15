@@ -18,8 +18,7 @@
 [ext_resource type="Texture2D" uid="uid://d270lusqo6t3a" path="res://box_open.png" id="14_2cqfq"]
 [ext_resource type="Texture2D" uid="uid://dcd77i0dnkmho" path="res://rotator.png" id="14_w48qg"]
 [ext_resource type="Script" uid="uid://bhrt0jjk4n56u" path="res://animatable_body_2d.gd" id="15_vivmo"]
-[ext_resource type="Texture2D" uid="uid://xh3s8lao3q52" path="res://game_points.png" id="19_82xsv"]
-[ext_resource type="Texture2D" uid="uid://dxek8i0a7jwc2" path="res://lightbulb.png" id="20_getpj"]
+[ext_resource type="PackedScene" uid="uid://bwu8q3i6e3dkp" path="res://texture_progress_bar.tscn" id="20_82xsv"]
 [ext_resource type="Script" uid="uid://cawoecw41q1ni" path="res://area_2d.gd" id="21_getpj"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_272bh"]
@@ -317,15 +316,6 @@ scale = Vector2(-1.0854325, 0.96862596)
 texture = ExtResource("10_dg77c")
 expand_mode = 1
 
-[node name="TextureProgressBar" type="TextureProgressBar" parent="." unique_id=991048751]
-offset_left = 154.0
-offset_top = 50.0
-offset_right = 286.3127
-offset_bottom = 178.0
-scale = Vector2(1.0732152, 1.1490823)
-texture_under = ExtResource("19_82xsv")
-texture_progress = ExtResource("20_getpj")
-
 [node name="Area2D" type="Area2D" parent="." unique_id=867287631]
 position = Vector2(246, 494)
 script = ExtResource("21_getpj")
@@ -333,5 +323,7 @@ script = ExtResource("21_getpj")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=736104880]
 position = Vector2(393.5, 96)
 shape = SubResource("RectangleShape2D_450et")
+
+[node name="TextureProgressBar" parent="." unique_id=1474671433 instance=ExtResource("20_82xsv")]
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
