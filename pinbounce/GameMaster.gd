@@ -12,3 +12,8 @@ func _process(delta: float) -> void:
 	if Input.is_action_pressed("reset"):
 		get_tree().reload_current_scene()
 	pass
+
+
+func _on_area_2d_body_entered(body: Node2D) -> void:
+	get_tree().reload_current_scene()
+	pass # Replace with function body.
